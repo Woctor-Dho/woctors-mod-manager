@@ -80,7 +80,7 @@ def update_config(config:dict, install_dir:str, branch:str):
         sys.exit(1)
 
 def main():
-    local = True
+    local = False
     cwd = pathlib.Path.cwd()
     branch = "master"
 
