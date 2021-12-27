@@ -167,6 +167,12 @@ SOURCE_TEMPLATE = [
 #        "mod_id": 244260,
 #        "output_dir": "mods",
 #    },
+    {
+        "name": "minimal_menu",
+        "source": Source.MODRINTH,
+        "mod_id": "BYtiUf2Z",
+        "output_dir": "mods",
+    },
 ]
 
 def get_input_num():

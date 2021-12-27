@@ -7,7 +7,7 @@ import dataclasses
 
 # global config
 repo_url = r"https://raw.githubusercontent.com/Woctor-Dho/woctors-mod-manager"
-branch = r"main_rewrite"
+branch = r"master"
 version = r"1.18"
 
 @dataclasses.dataclass(frozen=True)
@@ -67,7 +67,7 @@ def update_mod(mod:dict, install_dir:str):
 
 def update_config(config:dict, install_dir:str, branch:str):
     """Updates non-mod files."""
-    base=f"{repo_url}/{branch}/versions/{version}/resources"
+    base=f"{repo_url}/{branch}/versions/{version}/resources/"
     resource = requests.get(base + config["name"])
     if resource.status_code == 200:
         output_dir = pathlib.Path(install_dir, config["output_dir"])
