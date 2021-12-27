@@ -82,7 +82,6 @@ def update_config(config:dict, install_dir:str, branch:str):
 def main():
     local = False
     cwd = pathlib.Path.cwd()
-    branch = "master"
 
     # remove any old files
     #rm_patterns = JsonSource("woctors_modpack\rm_patterns.json", f"{repo_url}/{branch}/versions/{version}/rm_patterns.json")

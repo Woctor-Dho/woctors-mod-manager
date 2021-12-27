@@ -4,7 +4,7 @@
 
 1) Install [Multi MC](https://multimc.org/) and [python](https://www.python.org/downloads/windows/).
 2) MultiMC requires a specific java version. See [this guide](https://github.com/MultiMC/Launcher/wiki/Using-the-right-Java) for install instructions. 
-3) Using MultiMC, create a new 1.17.1 Instance, and install Fabric.
+3) Using MultiMC, create a new Instance, and install Fabric.
 4) Put [`mod_updater.py`](https://raw.githubusercontent.com/Woctor-Dho/woctors-mod-manager/main/mod_updater.py) in the instance's `.minecraft` folder.
 5) Got to your `Edit Instance > Settings > Custom commands`:
      - Enable "Custom Commands"
