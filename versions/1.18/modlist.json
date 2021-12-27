@@ -131,6 +131,12 @@
     "file_name": "litematica-fabric-1.18.0-0.9.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3580/242/litematica-fabric-1.18.0-0.9.0.jar"
 }, {
+    "name": "fast_chest",
+    "mod_id": 436038,
+    "output_dir": "mods",
+    "file_name": "fast-chest-1.2+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3544/190/fast-chest-1.2+1.18.jar"
+}, {
     "name": "minimal_menu",
     "mod_id": "BYtiUf2Z",
     "output_dir": "mods",
