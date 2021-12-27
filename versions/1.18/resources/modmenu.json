@@ -39,6 +39,8 @@
   	"ecs",
   	"bettereating",
     	"net_gudenau_lib_unsafe",
-    	"unsafe"
+    	"unsafe",
+        "cloth-basic-math",
+        "lazy-language-loader"
   ]
 }
