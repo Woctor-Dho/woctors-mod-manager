@@ -5,6 +5,12 @@
     "file_name": "fabric-api-0.45.0+1.18.jar",
     "download_url": "https://edge.forgecdn.net/files/3577/46/fabric-api-0.45.0+1.18.jar"
 }, {
+    "name": "cloth_config",
+    "mod_id": 319057,
+    "output_dir": "mods",
+    "file_name": "cloth-config-6.1.48-fabric.jar",
+    "download_url": "https://edge.forgecdn.net/files/3559/638/cloth-config-6.1.48-fabric.jar"
+}, {
     "name": "ding",
     "mod_id": 231275,
     "output_dir": "mods",
@@ -22,4 +28,106 @@
     "output_dir": "mods",
     "file_name": "BetterTaskbar-1.18-Forge-1.1.jar",
     "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Forge/BetterTaskbar-1.18-Forge-1.1.jar"
+}, {
+    "name": "dark_loading_screen",
+    "mod_id": 365727,
+    "output_dir": "mods",
+    "file_name": "dark-loading-screen-1.6.11.jar",
+    "download_url": "https://edge.forgecdn.net/files/3470/993/dark-loading-screen-1.6.11.jar"
+}, {
+    "name": "falling_leaves",
+    "mod_id": "WhbRG4iK",
+    "output_dir": "mods",
+    "file_name": "fallingleaves-1.8.1+1.18.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/WhbRG4iK/versions/1.8.1/fallingleaves-1.8.1+1.18.1.jar"
+}, {
+    "name": "ferrite_core",
+    "mod_id": "uXXizFIs",
+    "output_dir": "mods",
+    "file_name": "ferritecore-4.0.0-fabric.jar",
+    "download_url": "https://cdn.modrinth.com/data/uXXizFIs/versions/4.0.0/ferritecore-4.0.0-fabric.jar"
+}, {
+    "name": "Iris",
+    "mod_id": "YL57xq9U",
+    "output_dir": "mods",
+    "file_name": "iris-mc1.18.1-1.1.3.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/mc1.18-1.1.3/iris-mc1.18.1-1.1.3.jar"
+}, {
+    "name": "item_scroller",
+    "mod_id": 242064,
+    "output_dir": "mods",
+    "file_name": "itemscroller-fabric-1.18.0-0.15.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3544/231/itemscroller-fabric-1.18.0-0.15.0.jar"
+}, {
+    "name": "krypton",
+    "mod_id": "fQEb0iXm",
+    "output_dir": "mods",
+    "file_name": "krypton-0.1.6.jar",
+    "download_url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.1.6/krypton-0.1.6.jar"
+}, {
+    "name": "lazy_dfu",
+    "mod_id": "hvFnDODi",
+    "output_dir": "mods",
+    "file_name": "lazydfu-0.1.2.jar",
+    "download_url": "https://cdn.modrinth.com/data/hvFnDODi/versions/0.1.2/lazydfu-0.1.2.jar"
+}, {
+    "name": "lazy_language_loader",
+    "mod_id": "Nz0RSWrF",
+    "output_dir": "mods",
+    "file_name": "lazy-language-loader-0.2.3.jar",
+    "download_url": "https://cdn.modrinth.com/data/Nz0RSWrF/versions/0.2.3/lazy-language-loader-0.2.3.jar"
+}, {
+    "name": "malilib",
+    "mod_id": 303119,
+    "output_dir": "mods",
+    "file_name": "malilib-fabric-1.18.0-0.10.0-dev.26.jar",
+    "download_url": "https://edge.forgecdn.net/files/3544/210/malilib-fabric-1.18.0-0.10.0-dev.26.jar"
+}, {
+    "name": "mod_menu",
+    "mod_id": "mOgUt4GM",
+    "output_dir": "mods",
+    "file_name": "modmenu-3.0.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/3.0.1/modmenu-3.0.1.jar"
+}, {
+    "name": "ok_zoomer",
+    "mod_id": "aXf2OSFU",
+    "output_dir": "mods",
+    "file_name": "okzoomer-5.0.0-beta.3+1.17.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/aXf2OSFU/versions/5.0.0-beta.3+1.17.1/okzoomer-5.0.0-beta.3+1.17.1.jar"
+}, {
+    "name": "rebind_narrator",
+    "mod_id": "qw2Ls89j",
+    "output_dir": "mods",
+    "file_name": "rebind-narrator-1.18-1.0.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/qw2Ls89j/versions/1.0.0.18/rebind-narrator-1.18-1.0.0.jar"
+}, {
+    "name": "sodium",
+    "mod_id": "AANobbMI",
+    "output_dir": "mods",
+    "file_name": "sodium-fabric-mc1.18-0.4.0-alpha5+build.9.jar",
+    "download_url": "https://cdn.modrinth.com/data/AANobbMI/versions/mc1.18-0.40-alpha5/sodium-fabric-mc1.18-0.4.0-alpha5+build.9.jar"
+}, {
+    "name": "sodium-extra",
+    "mod_id": "PtjYWJkn",
+    "output_dir": "mods",
+    "file_name": "sodium-extra-mc1.18-0.3.7.jar",
+    "download_url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/mc1.18-0.3.7/sodium-extra-mc1.18-0.3.7.jar"
+}, {
+    "name": "starlight_fabric",
+    "mod_id": "H8CaAYZC",
+    "output_dir": "mods",
+    "file_name": "starlight-1.0.0+fabric.d0a3220.jar",
+    "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.18.x/starlight-1.0.0+fabric.d0a3220.jar"
+}, {
+    "name": "tweakeroo",
+    "mod_id": 297344,
+    "output_dir": "mods",
+    "file_name": "tweakeroo-fabric-1.18.0-0.11.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3579/871/tweakeroo-fabric-1.18.0-0.11.0.jar"
+}, {
+    "name": "litematica",
+    "mod_id": 308892,
+    "output_dir": "mods",
+    "file_name": "litematica-fabric-1.18.0-0.9.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3580/242/litematica-fabric-1.18.0-0.9.0.jar"
 }]
