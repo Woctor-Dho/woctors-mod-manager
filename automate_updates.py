@@ -8,14 +8,25 @@ import jsbeautifier
 from pprint import pprint
 from datetime import datetime
 
+# curseforge global config
 with open("curseforge_api_key.txt", "r") as f:
-    API_KEY = f.read().strip()
-CURSE_BASE_URL = "https://api.curseforge.com"
+    CURSE_API_KEY = f.read().strip()
+CURSE_BASE_URL = r"https://api.curseforge.com"
 # 306612
 curse_headers = {
     'Accept': 'application/json',
-    'x-api-key': API_KEY
+    'x-api-key': CURSE_API_KEY
 }
+
+# modrinth global config
+MODRINTH_BASE_URL = r"https://api.modrinth.com/"
+
+# general global config
+MAX_ENTRIES = 8
+
+class Source(enum.Enum):
+    CURSEFORGE = 1
+    MODRINTH = 2
 
 def get_input_num():
     choice = input(" > ")
@@ -47,12 +58,12 @@ def update_curse(game_version: str, entry: dict):
 
     data = r.json()["data"]
     data.sort(reverse=True, key=lambda item : item["fileDate"])
-    print("Choose an option:")
-    for i, curse_file in enumerate(data[0:min(8, len(data))]):
+    print("\nChoose an option (CURSEFORGE):")
+    for i, curse_file in enumerate(data[0:min(MAX_ENTRIES, len(data))]):
         is_curr_string = ""
         curr_file = pathlib.Path(entry["output_dir"], f"[{entry['name']}]{curse_file['fileName']}")
         if curr_file.exists():
-            is_curr_string = " current"
+            is_curr_string = "  CURRENT"
             # save a ref so can be used as defualt if needed
             default_curse_file = curse_file
         print(f"\t{i}: {curse_file['displayName']}  ({curse_file['downloadCount']} downloads){is_curr_string}")
@@ -71,8 +82,38 @@ def update_curse(game_version: str, entry: dict):
 
     return entry
 
-class Source(enum.Enum):
-    CURSEFORGE = 1
+def update_modrinth(game_version: str, entry: dict):
+    r = requests.get(f"{MODRINTH_BASE_URL}api/v1/mod/{entry['mod_id']}/version")
+    pprint(r.json())
+
+    def get_filename(modrinth_file):
+        return modrinth_file['files'][0]["filename"]
+
+    data = r.json()
+    data.sort(reverse=True, key=lambda item : item["name"])
+    print("\nChoose an option (MODRINTH):")
+    for i, modrinth_file in enumerate(data[0:min(MAX_ENTRIES, len(data))]):
+        is_curr_string = ""
+        curr_file = pathlib.Path(entry["output_dir"], f"[{entry['name']}]{get_filename(modrinth_file)}")
+        if curr_file.exists():
+            is_curr_string = "  CURRENT"
+            # save a ref so can be used as defualt if needed
+            default_modrinth_file = modrinth_file
+        print(f"\t{i}: {modrinth_file['name']}  ({modrinth_file['downloads']} downloads){is_curr_string}")
+
+    # get choice
+    choice = get_input_num()
+    
+    # save off needed data
+    if choice is None:
+        modrinth_file = default_modrinth_file
+    else:
+        modrinth_file = data[choice]
+    #pprint(curse_file)
+    entry['file_name'] = get_filename(modrinth_file)
+    entry['download_url'] =  modrinth_file['files'][0]["url"]
+
+    return entry
 
 def generate_modlist(modlist_file: str):
     game_version = "1.18"
@@ -96,6 +137,18 @@ def generate_modlist(modlist_file: str):
             "mod_id": 420155,
             "output_dir": "mods",
         },
+        {
+            "name": "better_taskbar",
+            "source": Source.MODRINTH,
+            "mod_id": "gPEcet33",
+            "output_dir": "mods",
+        },
+        {
+            "name": "cloth_config",
+            "source": Source.MODRINTH,
+            "mod_id": 319057,
+            "output_dir": "mods",
+        }
     ]
 
     output = list()
@@ -104,6 +157,8 @@ def generate_modlist(modlist_file: str):
         result = None
         if entry["source"] == Source.CURSEFORGE:
             result = update_curse(game_version, entry)
+        elif entry["source"] == Source.MODRINTH:
+            result = update_modrinth(game_version, entry)
 
         # save result
         if entry is None:

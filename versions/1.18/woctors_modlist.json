@@ -16,4 +16,10 @@
     "output_dir": "mods",
     "file_name": "bears-armor-hud-0.3.5.jar",
     "download_url": "https://edge.forgecdn.net/files/3554/894/bears-armor-hud-0.3.5.jar"
+}, {
+    "name": "better_taskbar",
+    "mod_id": "gPEcet33",
+    "output_dir": "mods",
+    "file_name": "BetterTaskbar-1.18-Forge-1.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Forge/BetterTaskbar-1.18-Forge-1.1.jar"
 }]
