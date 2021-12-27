@@ -161,6 +161,12 @@ SOURCE_TEMPLATE = [
         "mod_id": 308892,
         "output_dir": "mods",
     },
+    {
+        "name": "fast_chest",
+        "source": Source.CURSEFORGE,
+        "mod_id": 436038,
+        "output_dir": "mods",
+    },
 #    {
 #        "name": "mini_hud",
 #        "source": Source.CURSEFORGE,
