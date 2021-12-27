@@ -311,7 +311,7 @@ def main():
     args = parser.parse_args()
 
     if args.update_list:
-        generate_modlist(r"woctors-mod-manager\versions\1.18\woctors_modlist.json")
+        generate_modlist(r"woctors-mod-manager\versions\1.18\modlist.json")
 
 if __name__ == "__main__":
     main()

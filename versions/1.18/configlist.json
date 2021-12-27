@@ -1,0 +1,10 @@
+[
+    {
+        "name": "modmenu.json",
+        "output_dir": "config"
+    },
+    {
+        "name": "minimalmenu.json",
+        "output_dir": "config"
+    }
+]

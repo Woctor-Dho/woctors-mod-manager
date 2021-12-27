@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import sys
 import json
 import pathlib
 import requests
@@ -63,6 +64,21 @@ def update_mod(mod:dict, install_dir:str):
 
         else:
             print("download failed, skipping mod")
+
+def update_config(config:dict, install_dir:str, branch:str):
+    """Updates non-mod files."""
+    base=f"{repo_url}/{branch}/versions/{version}/resources"
+    resource = requests.get(base + config["name"])
+    if resource.status_code == 200:
+        output_dir = pathlib.Path(install_dir, config["output_dir"])
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_file = pathlib.Path(output_dir, config["name"])
+        with open(output_file, "wb") as out:
+            out.write(resource.content)
+    else:
+        print(f"could not download resouce {config['name']}!")
+        sys.exit(1)
+
 def main():
     local = True
     cwd = pathlib.Path.cwd()
@@ -73,12 +89,12 @@ def main():
     #rm_patterns.do_for_each(rm_pattern, local, cwd)
 
     # update mods
-    mods = JsonSource(f"woctors-mod-manager/versions/{version}/woctors_modlist.json", f"{repo_url}/{branch}/versions/{version}/woctors_modlist.json")
+    mods = JsonSource(f"woctors-mod-manager/versions/{version}/modlist.json", f"{repo_url}/{branch}/versions/{version}/modlist.json")
     mods.do_for_each(update_mod, local, cwd)
 
     # update config files
-    #config = JsonSource("woctors_modpack\woctors_configlist.json", f"{repo_url}/{branch}/versions/{version}/woctors_configlist.json")
-    #config.do_for_each(update_config, local, cwd, branch)
+    config = JsonSource(f"woctors-mod-manager/versions/{version}/configlist.json", f"{repo_url}/{branch}/versions/{version}/configlist.json")
+    config.do_for_each(update_config, local, cwd, branch)
 
 if __name__ == "__main__":
     main()
