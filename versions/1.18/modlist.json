@@ -26,8 +26,8 @@
     "name": "better_taskbar",
     "mod_id": "gPEcet33",
     "output_dir": "mods",
-    "file_name": "BetterTaskbar-1.18-Forge-1.1.jar",
-    "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Forge/BetterTaskbar-1.18-Forge-1.1.jar"
+    "file_name": "BetterTaskbar-1.18-Fabric-1.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Fabric/BetterTaskbar-1.18-Fabric-1.1.jar"
 }, {
     "name": "dark_loading_screen",
     "mod_id": 365727,
@@ -74,8 +74,8 @@
     "name": "lazy_language_loader",
     "mod_id": "Nz0RSWrF",
     "output_dir": "mods",
-    "file_name": "lazy-language-loader-0.2.3.jar",
-    "download_url": "https://cdn.modrinth.com/data/Nz0RSWrF/versions/0.2.3/lazy-language-loader-0.2.3.jar"
+    "file_name": "lazy-language-loader-0.2.6.jar",
+    "download_url": "https://cdn.modrinth.com/data/Nz0RSWrF/versions/0.2.6/lazy-language-loader-0.2.6.jar"
 }, {
     "name": "malilib",
     "mod_id": 303119,
@@ -141,5 +141,29 @@
     "mod_id": "BYtiUf2Z",
     "output_dir": "mods",
     "file_name": "minimalmenu-1.18.1-0.1.0.jar",
-    "download_url": "https://cdn.modrinth.com/data/BYtiUf2Z/versions/1.18.1-0.1.0/minimalmenu-1.18.1-0.1.0.jar"
+    "download_url": "https://cdn.modrinth.com/data/BYtiUf2Z/versions/1.18.1-0.0.1/minimalmenu-1.18.1-0.1.0.jar"
+}, {
+    "name": "smooth_boot",
+    "mod_id": 415758,
+    "output_dir": "mods",
+    "file_name": "smoothboot-fabric-1.18-1.7.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3549/723/smoothboot-fabric-1.18-1.7.0.jar"
+}, {
+    "name": "no_fade",
+    "mod_id": 452768,
+    "output_dir": "mods",
+    "file_name": "nofade-1.18-2.0.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3550/935/nofade-1.18-2.0.1.jar"
+}, {
+    "name": "lambda_better_grass",
+    "mod_id": "2Uev7LdA",
+    "output_dir": "mods",
+    "file_name": "lambdabettergrass-1.2.1+1.17.jar",
+    "download_url": "https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.1+1.17/lambdabettergrass-1.2.1+1.17.jar"
+}, {
+    "name": "Indium",
+    "mod_id": "Orvt0mRa",
+    "output_dir": "mods",
+    "file_name": "indium-1.0.2-alpha1+mc1.18.jar",
+    "download_url": "https://cdn.modrinth.com/data/Orvt0mRa/versions/1.0.2-alpha1+mc1.18/indium-1.0.2-alpha1+mc1.18.jar"
 }]

@@ -179,6 +179,31 @@ SOURCE_TEMPLATE = [
         "mod_id": "BYtiUf2Z",
         "output_dir": "mods",
     },
+    {
+        "name": "smooth_boot",
+        "source": Source.CURSEFORGE,
+        "mod_id": 415758,
+        "output_dir": "mods",
+    },
+    {
+        "name": "no_fade",
+        "source": Source.CURSEFORGE,
+        "mod_id": 452768,
+        "output_dir": "mods",
+    },
+    {
+        "name": "lambda_better_grass",
+        "source": Source.MODRINTH,
+        "mod_id": "2Uev7LdA",
+        "output_dir": "mods",
+    },
+    {
+        "name": "Indium",
+        "source": Source.MODRINTH,
+        "mod_id": "Orvt0mRa",
+        "output_dir": "mods",
+    },
+
 ]
 
 def get_input_num():
@@ -252,7 +277,7 @@ def update_modrinth(game_version: str, entry: dict):
         return modrinth_file['files'][0]["filename"]
 
     data = r.json()
-    data.sort(reverse=True, key=lambda item : item["name"])
+    data.sort(reverse=True, key=lambda item : item["date_published"])
 
     default_modrinth_file = None
 
