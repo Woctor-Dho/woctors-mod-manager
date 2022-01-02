@@ -119,6 +119,12 @@
     "file_name": "starlight-1.0.0+fabric.d0a3220.jar",
     "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.18.x/starlight-1.0.0+fabric.d0a3220.jar"
 }, {
+    "name": "lithium",
+    "mod_id": "gvQqBUqZ",
+    "output_dir": "mods",
+    "file_name": "lithium-fabric-mc1.18.1-0.7.7.jar",
+    "download_url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/mc1.18.1-0.7.7/lithium-fabric-mc1.18.1-0.7.7.jar"
+}, {
     "name": "tweakeroo",
     "mod_id": 297344,
     "output_dir": "mods",

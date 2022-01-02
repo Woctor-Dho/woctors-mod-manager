@@ -150,6 +150,12 @@ SOURCE_TEMPLATE = [
         "output_dir": "mods",
     },
     {
+        "name": "lithium",
+        "source": Source.MODRINTH,
+        "mod_id": "gvQqBUqZ",
+        "output_dir": "mods",
+    },
+    {
         "name": "tweakeroo",
         "source": Source.CURSEFORGE,
         "mod_id": 297344,
