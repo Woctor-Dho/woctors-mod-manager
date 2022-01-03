@@ -1,0 +1,176 @@
+[
+    {
+        "name": "fabric_api",
+        "source": "curseforge",
+        "mod_id": 306612,
+        "output_dir": "mods"
+    },
+    {
+        "name": "cloth_config",
+        "source": "curseforge",
+        "mod_id": 319057,
+        "output_dir": "mods"
+    },
+    {
+        "name": "ding",
+        "source": "curseforge",
+        "mod_id": 231275,
+        "output_dir": "mods"
+    },
+    {
+        "name": "bears_armour_hud",
+        "source": "curseforge",
+        "mod_id": 420155,
+        "output_dir": "mods"
+    },
+    {
+        "name": "better_taskbar",
+        "source": "modrinth",
+        "mod_id": "gPEcet33",
+        "output_dir": "mods"
+    },
+    {
+        "name": "dark_loading_screen",
+        "source": "curseforge",
+        "mod_id": 365727,
+        "output_dir": "mods"
+    },
+    {
+        "name": "falling_leaves",
+        "source": "modrinth",
+        "mod_id": "WhbRG4iK",
+        "output_dir": "mods"
+    },
+    {
+        "name": "ferrite_core",
+        "source": "modrinth",
+        "mod_id": "uXXizFIs",
+        "output_dir": "mods"
+    },
+    {
+        "name": "Iris",
+        "source": "modrinth",
+        "mod_id": "YL57xq9U",
+        "output_dir": "mods"
+    },
+    {
+        "name": "item_scroller",
+        "source": "curseforge",
+        "mod_id": 242064,
+        "output_dir": "mods"
+    },
+    {
+        "name": "krypton",
+        "source": "modrinth",
+        "mod_id": "fQEb0iXm",
+        "output_dir": "mods"
+    },
+    {
+        "name": "lazy_dfu",
+        "source": "modrinth",
+        "mod_id": "hvFnDODi",
+        "output_dir": "mods"
+    },
+    {
+        "name": "lazy_language_loader",
+        "source": "modrinth",
+        "mod_id": "Nz0RSWrF",
+        "output_dir": "mods"
+    },
+    {
+        "name": "malilib",
+        "source": "curseforge",
+        "mod_id": 303119,
+        "output_dir": "mods"
+    },
+    {
+        "name": "mod_menu",
+        "source": "modrinth",
+        "mod_id": "mOgUt4GM",
+        "output_dir": "mods"
+    },
+    {
+        "name": "ok_zoomer",
+        "source": "modrinth",
+        "mod_id": "aXf2OSFU",
+        "output_dir": "mods"
+    },
+    {
+        "name": "rebind_narrator",
+        "source": "modrinth",
+        "mod_id": "qw2Ls89j",
+        "output_dir": "mods"
+    },
+    {
+        "name": "sodium",
+        "source": "modrinth",
+        "mod_id": "AANobbMI",
+        "output_dir": "mods"
+    },
+    {
+        "name": "sodium-extra",
+        "source": "modrinth",
+        "mod_id": "PtjYWJkn",
+        "output_dir": "mods"
+    },
+    {
+        "name": "starlight_fabric",
+        "source": "modrinth",
+        "mod_id": "H8CaAYZC",
+        "output_dir": "mods"
+    },
+    {
+        "name": "lithium",
+        "source": "modrinth",
+        "mod_id": "gvQqBUqZ",
+        "output_dir": "mods"
+    },
+    {
+        "name": "tweakeroo",
+        "source": "curseforge",
+        "mod_id": 297344,
+        "output_dir": "mods"
+    },
+    {
+        "name": "litematica",
+        "source": "curseforge",
+        "mod_id": 308892,
+        "output_dir": "mods"
+    },
+    {
+        "name": "fast_chest",
+        "source": "curseforge",
+        "mod_id": 436038,
+        "output_dir": "mods"
+    },
+    {
+        "name": "minimal_menu",
+        "source": "modrinth",
+        "mod_id": "BYtiUf2Z",
+        "output_dir": "mods"
+    },
+    {
+        "name": "smooth_boot",
+        "source": "curseforge",
+        "mod_id": 415758,
+        "output_dir": "mods"
+    },
+    {
+        "name": "no_fade",
+        "source": "curseforge",
+        "mod_id": 452768,
+        "output_dir": "mods"
+    },
+    {
+        "name": "lambda_better_grass",
+        "source": "modrinth",
+        "mod_id": "2Uev7LdA",
+        "output_dir": "mods"
+    },
+    {
+        "name": "Indium",
+        "source": "modrinth",
+        "mod_id": "Orvt0mRa",
+        "output_dir": "mods"
+    }
+]
