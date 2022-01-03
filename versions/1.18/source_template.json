@@ -172,5 +172,11 @@
         "source": "modrinth",
         "mod_id": "Orvt0mRa",
         "output_dir": "mods"
+    },
+    {
+        "name": "AntiGhost",
+        "source": "curseforge",
+        "mod_id": 273279,
+        "output_dir": "mods"
     }
 ]

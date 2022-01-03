@@ -160,6 +160,11 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
             if game_version in curr_ver:
                 return True
         return False
+
+    def anti_forge(item, game_version):
+        if "forge" in item["fileName"]:
+                return False
+        return True
     
     # define sources
     sources = {
@@ -179,7 +184,8 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
             sort_kwargs = {
                 "reverse":True,
                 "key":lambda x:x["fileDate"]
-            }
+            },
+            filter=anti_forge,
         ),
 
         "modrinth": mod_source(r"https://api.modrinth.com", "api/v1/mod/{mod_id}/version",
@@ -197,6 +203,7 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
     source_template = list()
     with open(infile.resolve(), "r") as f:
         source_template = json.load(f)
+        source_template.sort(key=lambda x:x['name'].lower())
     
     # process each entry, append each result to results
     results = list()

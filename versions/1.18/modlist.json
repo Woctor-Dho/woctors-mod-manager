@@ -1,24 +1,10 @@
 [{
-    "name": "fabric_api",
+    "name": "AntiGhost",
     "source": "curseforge",
-    "mod_id": 306612,
+    "mod_id": 273279,
     "output_dir": "mods",
-    "file_name": "fabric-api-0.45.1+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3591/502/fabric-api-0.45.1+1.18.jar"
-}, {
-    "name": "cloth_config",
-    "source": "curseforge",
-    "mod_id": 319057,
-    "output_dir": "mods",
-    "file_name": "cloth-config-6.1.48-fabric.jar",
-    "download_url": "https://edge.forgecdn.net/files/3559/638/cloth-config-6.1.48-fabric.jar"
-}, {
-    "name": "ding",
-    "source": "curseforge",
-    "mod_id": 231275,
-    "output_dir": "mods",
-    "file_name": "Ding-1.18-1.3.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
+    "file_name": "antighost-1.18-fabric0.43.1-1.1.4.jar",
+    "download_url": "https://edge.forgecdn.net/files/3543/423/antighost-1.18-fabric0.43.1-1.1.4.jar"
 }, {
     "name": "bears_armour_hud",
     "source": "curseforge",
@@ -34,12 +20,33 @@
     "file_name": "BetterTaskbar-1.18-Fabric-1.1.jar",
     "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Fabric/BetterTaskbar-1.18-Fabric-1.1.jar"
 }, {
+    "name": "cloth_config",
+    "source": "curseforge",
+    "mod_id": 319057,
+    "output_dir": "mods",
+    "file_name": "cloth-config-6.1.48-fabric.jar",
+    "download_url": "https://edge.forgecdn.net/files/3559/638/cloth-config-6.1.48-fabric.jar"
+}, {
     "name": "dark_loading_screen",
     "source": "curseforge",
     "mod_id": 365727,
     "output_dir": "mods",
     "file_name": "dark-loading-screen-1.6.11.jar",
     "download_url": "https://edge.forgecdn.net/files/3470/993/dark-loading-screen-1.6.11.jar"
+}, {
+    "name": "ding",
+    "source": "curseforge",
+    "mod_id": 231275,
+    "output_dir": "mods",
+    "file_name": "Ding-1.18-1.3.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
+}, {
+    "name": "fabric_api",
+    "source": "curseforge",
+    "mod_id": 306612,
+    "output_dir": "mods",
+    "file_name": "fabric-api-0.45.1+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3591/502/fabric-api-0.45.1+1.18.jar"
 }, {
     "name": "falling_leaves",
     "source": "modrinth",
@@ -48,12 +55,26 @@
     "file_name": "fallingleaves-1.8.1+1.18.1.jar",
     "download_url": "https://cdn.modrinth.com/data/WhbRG4iK/versions/1.8.1/fallingleaves-1.8.1+1.18.1.jar"
 }, {
+    "name": "fast_chest",
+    "source": "curseforge",
+    "mod_id": 436038,
+    "output_dir": "mods",
+    "file_name": "fast-chest-1.2+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3544/190/fast-chest-1.2+1.18.jar"
+}, {
     "name": "ferrite_core",
     "source": "modrinth",
     "mod_id": "uXXizFIs",
     "output_dir": "mods",
     "file_name": "ferritecore-4.0.0-fabric.jar",
     "download_url": "https://cdn.modrinth.com/data/uXXizFIs/versions/4.0.0/ferritecore-4.0.0-fabric.jar"
+}, {
+    "name": "Indium",
+    "source": "modrinth",
+    "mod_id": "Orvt0mRa",
+    "output_dir": "mods",
+    "file_name": "indium-1.0.2-alpha1+mc1.18.jar",
+    "download_url": "https://cdn.modrinth.com/data/Orvt0mRa/versions/1.0.2-alpha1+mc1.18/indium-1.0.2-alpha1+mc1.18.jar"
 }, {
     "name": "Iris",
     "source": "modrinth",
@@ -76,6 +97,13 @@
     "file_name": "krypton-0.1.6.jar",
     "download_url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.1.6/krypton-0.1.6.jar"
 }, {
+    "name": "lambda_better_grass",
+    "source": "modrinth",
+    "mod_id": "2Uev7LdA",
+    "output_dir": "mods",
+    "file_name": "lambdabettergrass-1.2.2+1.17.jar",
+    "download_url": "https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.2+1.17/lambdabettergrass-1.2.2+1.17.jar"
+}, {
     "name": "lazy_dfu",
     "source": "modrinth",
     "mod_id": "hvFnDODi",
@@ -90,6 +118,20 @@
     "file_name": "lazy-language-loader-0.2.6.jar",
     "download_url": "https://cdn.modrinth.com/data/Nz0RSWrF/versions/0.2.6/lazy-language-loader-0.2.6.jar"
 }, {
+    "name": "litematica",
+    "source": "curseforge",
+    "mod_id": 308892,
+    "output_dir": "mods",
+    "file_name": "litematica-fabric-1.18.0-0.9.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3580/242/litematica-fabric-1.18.0-0.9.0.jar"
+}, {
+    "name": "lithium",
+    "source": "modrinth",
+    "mod_id": "gvQqBUqZ",
+    "output_dir": "mods",
+    "file_name": "lithium-fabric-mc1.18.1-0.7.7.jar",
+    "download_url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/mc1.18.1-0.7.7/lithium-fabric-mc1.18.1-0.7.7.jar"
+}, {
     "name": "malilib",
     "source": "curseforge",
     "mod_id": 303119,
@@ -97,12 +139,26 @@
     "file_name": "malilib-fabric-1.18.0-0.10.0-dev.26.jar",
     "download_url": "https://edge.forgecdn.net/files/3544/210/malilib-fabric-1.18.0-0.10.0-dev.26.jar"
 }, {
+    "name": "minimal_menu",
+    "source": "modrinth",
+    "mod_id": "BYtiUf2Z",
+    "output_dir": "mods",
+    "file_name": "minimalmenu-1.18.1-0.1.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/BYtiUf2Z/versions/1.18.1-0.0.1/minimalmenu-1.18.1-0.1.0.jar"
+}, {
     "name": "mod_menu",
     "source": "modrinth",
     "mod_id": "mOgUt4GM",
     "output_dir": "mods",
     "file_name": "modmenu-3.0.1.jar",
     "download_url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/3.0.1/modmenu-3.0.1.jar"
+}, {
+    "name": "no_fade",
+    "source": "curseforge",
+    "mod_id": 452768,
+    "output_dir": "mods",
+    "file_name": "nofade-1.18-2.0.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3550/935/nofade-1.18-2.0.1.jar"
 }, {
     "name": "ok_zoomer",
     "source": "modrinth",
@@ -117,6 +173,13 @@
     "output_dir": "mods",
     "file_name": "rebind-narrator-1.18-1.0.0.jar",
     "download_url": "https://cdn.modrinth.com/data/qw2Ls89j/versions/1.0.0.18/rebind-narrator-1.18-1.0.0.jar"
+}, {
+    "name": "smooth_boot",
+    "source": "curseforge",
+    "mod_id": 415758,
+    "output_dir": "mods",
+    "file_name": "smoothboot-fabric-1.18-1.7.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3549/723/smoothboot-fabric-1.18-1.7.0.jar"
 }, {
     "name": "sodium",
     "source": "modrinth",
@@ -139,66 +202,10 @@
     "file_name": "starlight-1.0.0+fabric.d0a3220.jar",
     "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.18.x/starlight-1.0.0+fabric.d0a3220.jar"
 }, {
-    "name": "lithium",
-    "source": "modrinth",
-    "mod_id": "gvQqBUqZ",
-    "output_dir": "mods",
-    "file_name": "lithium-fabric-mc1.18.1-0.7.7.jar",
-    "download_url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/mc1.18.1-0.7.7/lithium-fabric-mc1.18.1-0.7.7.jar"
-}, {
     "name": "tweakeroo",
     "source": "curseforge",
     "mod_id": 297344,
     "output_dir": "mods",
     "file_name": "tweakeroo-fabric-1.18.0-0.11.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3579/871/tweakeroo-fabric-1.18.0-0.11.0.jar"
-}, {
-    "name": "litematica",
-    "source": "curseforge",
-    "mod_id": 308892,
-    "output_dir": "mods",
-    "file_name": "litematica-fabric-1.18.0-0.9.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3580/242/litematica-fabric-1.18.0-0.9.0.jar"
-}, {
-    "name": "fast_chest",
-    "source": "curseforge",
-    "mod_id": 436038,
-    "output_dir": "mods",
-    "file_name": "fast-chest-1.2+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3544/190/fast-chest-1.2+1.18.jar"
-}, {
-    "name": "minimal_menu",
-    "source": "modrinth",
-    "mod_id": "BYtiUf2Z",
-    "output_dir": "mods",
-    "file_name": "minimalmenu-1.18.1-0.1.0.jar",
-    "download_url": "https://cdn.modrinth.com/data/BYtiUf2Z/versions/1.18.1-0.0.1/minimalmenu-1.18.1-0.1.0.jar"
-}, {
-    "name": "smooth_boot",
-    "source": "curseforge",
-    "mod_id": 415758,
-    "output_dir": "mods",
-    "file_name": "smoothboot-fabric-1.18-1.7.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3549/723/smoothboot-fabric-1.18-1.7.0.jar"
-}, {
-    "name": "no_fade",
-    "source": "curseforge",
-    "mod_id": 452768,
-    "output_dir": "mods",
-    "file_name": "nofade-1.18-2.0.1.jar",
-    "download_url": "https://edge.forgecdn.net/files/3550/935/nofade-1.18-2.0.1.jar"
-}, {
-    "name": "lambda_better_grass",
-    "source": "modrinth",
-    "mod_id": "2Uev7LdA",
-    "output_dir": "mods",
-    "file_name": "lambdabettergrass-1.2.2+1.17.jar",
-    "download_url": "https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.2+1.17/lambdabettergrass-1.2.2+1.17.jar"
-}, {
-    "name": "Indium",
-    "source": "modrinth",
-    "mod_id": "Orvt0mRa",
-    "output_dir": "mods",
-    "file_name": "indium-1.0.2-alpha1+mc1.18.jar",
-    "download_url": "https://cdn.modrinth.com/data/Orvt0mRa/versions/1.0.2-alpha1+mc1.18/indium-1.0.2-alpha1+mc1.18.jar"
 }]
