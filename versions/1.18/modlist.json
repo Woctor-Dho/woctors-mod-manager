@@ -41,6 +41,13 @@
     "file_name": "Ding-1.18-1.3.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
 }, {
+    "name": "elytra_chestplate_swapper",
+    "source": "curseforge",
+    "mod_id": 473125,
+    "output_dir": "mods",
+    "file_name": "elytra-chestplate-swapper-1.2.1-MC1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3571/250/elytra-chestplate-swapper-1.2.1-MC1.18.jar"
+}, {
     "name": "fabric_api",
     "source": "curseforge",
     "mod_id": 306612,
