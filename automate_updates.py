@@ -1,210 +1,21 @@
 #!/usr/bin/python3
 import requests
-import enum
 import json
 import pathlib
 import argparse
 import jsbeautifier
+import copy
+import sys
+import dataclasses
 from pprint import pprint
-from datetime import datetime
 
-# curseforge global config
-with open("curseforge_api_key.txt", "r") as f:
-    CURSE_API_KEY = f.read().strip()
-CURSE_BASE_URL = r"https://api.curseforge.com"
-# 306612
-curse_headers = {
-    'Accept': 'application/json',
-    'x-api-key': CURSE_API_KEY
-}
-
-# modrinth global config
-MODRINTH_BASE_URL = r"https://api.modrinth.com/"
-
-# general global config
-MAX_ENTRIES = 8
-
-class Source(enum.Enum):
-    CURSEFORGE = 1
-    MODRINTH = 2
-
-SOURCE_TEMPLATE = [
-    {
-        "name": "fabric_api",
-        "source": Source.CURSEFORGE,
-        "mod_id": 306612,
-        "output_dir": "mods",
-    },
-    {
-        "name": "cloth_config",
-        "source": Source.CURSEFORGE,
-        "mod_id": 319057,
-        "output_dir": "mods",
-    },
-    {
-        "name": "ding",
-        "source": Source.CURSEFORGE,
-        "mod_id": 231275,
-        "output_dir": "mods",
-    },
-    {
-        "name": "bears_armour_hud",
-        "source": Source.CURSEFORGE,
-        "mod_id": 420155,
-        "output_dir": "mods",
-    },
-    {
-        "name": "better_taskbar",
-        "source": Source.MODRINTH,
-        "mod_id": "gPEcet33",
-        "output_dir": "mods",
-    },
-    {
-        "name": "dark_loading_screen",
-        "source": Source.CURSEFORGE,
-        "mod_id": 365727,
-        "output_dir": "mods",
-    },
-    {
-        "name": "falling_leaves",
-        "source": Source.MODRINTH,
-        "mod_id": "WhbRG4iK",
-        "output_dir": "mods",
-    },
-    {
-        "name": "ferrite_core",
-        "source": Source.MODRINTH,
-        "mod_id": "uXXizFIs",
-        "output_dir": "mods",
-    },
-    {
-        "name": "Iris",
-        "source": Source.MODRINTH,
-        "mod_id": "YL57xq9U",
-        "output_dir": "mods",
-    },
-    {
-        "name": "item_scroller",
-        "source": Source.CURSEFORGE,
-        "mod_id": 242064,
-        "output_dir": "mods",
-    },
-    {
-        "name": "krypton",
-        "source": Source.MODRINTH,
-        "mod_id": "fQEb0iXm",
-        "output_dir": "mods",
-    },
-    {
-        "name": "lazy_dfu",
-        "source": Source.MODRINTH,
-        "mod_id": "hvFnDODi",
-        "output_dir": "mods",
-    },
-    {
-        "name": "lazy_language_loader",
-        "source": Source.MODRINTH,
-        "mod_id": "Nz0RSWrF",
-        "output_dir": "mods",
-    },
-    {
-        "name": "malilib",
-        "source": Source.CURSEFORGE,
-        "mod_id": 303119,
-        "output_dir": "mods",
-    },
-    {
-        "name": "mod_menu",
-        "source": Source.MODRINTH,
-        "mod_id": "mOgUt4GM",
-        "output_dir": "mods",
-    },
-    {
-        "name": "ok_zoomer",
-        "source": Source.MODRINTH,
-        "mod_id": "aXf2OSFU",
-        "output_dir": "mods",
-    },
-    {
-        "name": "rebind_narrator",
-        "source": Source.MODRINTH,
-        "mod_id": "qw2Ls89j",
-        "output_dir": "mods",
-    },
-    {
-        "name": "sodium",
-        "source": Source.MODRINTH,
-        "mod_id": "AANobbMI",
-        "output_dir": "mods",
-    },
-    {
-        "name": "sodium-extra",
-        "source": Source.MODRINTH,
-        "mod_id": "PtjYWJkn",
-        "output_dir": "mods",
-    },
-    {
-        "name": "starlight_fabric",
-        "source": Source.MODRINTH,
-        "mod_id": "H8CaAYZC",
-        "output_dir": "mods",
-    },
-    {
-        "name": "tweakeroo",
-        "source": Source.CURSEFORGE,
-        "mod_id": 297344,
-        "output_dir": "mods",
-    },
-    {
-        "name": "litematica",
-        "source": Source.CURSEFORGE,
-        "mod_id": 308892,
-        "output_dir": "mods",
-    },
-    {
-        "name": "fast_chest",
-        "source": Source.CURSEFORGE,
-        "mod_id": 436038,
-        "output_dir": "mods",
-    },
+# TODO add this mod
 #    {
 #        "name": "mini_hud",
-#        "source": Source.CURSEFORGE,
+#        "source": "curseforge",
 #        "mod_id": 244260,
 #        "output_dir": "mods",
 #    },
-    {
-        "name": "minimal_menu",
-        "source": Source.MODRINTH,
-        "mod_id": "BYtiUf2Z",
-        "output_dir": "mods",
-    },
-    {
-        "name": "smooth_boot",
-        "source": Source.CURSEFORGE,
-        "mod_id": 415758,
-        "output_dir": "mods",
-    },
-    {
-        "name": "no_fade",
-        "source": Source.CURSEFORGE,
-        "mod_id": 452768,
-        "output_dir": "mods",
-    },
-    {
-        "name": "lambda_better_grass",
-        "source": Source.MODRINTH,
-        "mod_id": "2Uev7LdA",
-        "output_dir": "mods",
-    },
-    {
-        "name": "Indium",
-        "source": Source.MODRINTH,
-        "mod_id": "Orvt0mRa",
-        "output_dir": "mods",
-    },
-
-]
 
 def get_input_num():
     while True:
@@ -216,139 +27,238 @@ def get_input_num():
             print("Try again")
     return ret
 
-def mod_exists(dir:str, name:str):
-    return pathlib.Path(dir).glob(f"{name}--*")
+@dataclasses.dataclass(frozen=True)
+class mod_source():
+    base_url: str
+    api_path_fmt_str: str
+    to_filename:callable # takes a single list entry, and returns the filename
+    to_download_url:callable # takes a single list entry, and returns the download url
+    to_data:callable = lambda x:x # assume the api just returns a list, if it doesnt, provide your own lambda that fetches the list from the api's respose's json
+    to_downloads:callable = None # optional, get the number of downloads, used by the user prompt
+    headers:dict = None
+    params:dict = None
+    sort_kwargs:dict = None # a dict that is splated (**)
+    filter:callable = None
 
-def get_version_id(version: str):
-    version = f"Minecraft {version}"
-    minecraft_game_id = 432
-    r = requests.get(f'{CURSE_BASE_URL}/v1/games/{minecraft_game_id}/version-types', headers=curse_headers)
-    for item in r.json()["data"]:
-        if item["name"] == version:
-            return item["id"]
-    return None
+    @property
+    def api_fmt_str(self):
+        return '/'.join((self.base_url, self.api_path_fmt_str))
+    
+    @staticmethod
+    def get_current_version(mods_dir:pathlib.Path, mod_name:str, verbose=False):
+        current_version = None
+        if mods_dir:
+            for file in mods_dir.glob("*.jar"):
+                file = str(file)
+                if f"[{mod_name}]" in file:
+                    current_version = file.rsplit(']', 1)[1]
+                    break
+        if verbose:
+            print(f"{current_version=}")
+        return current_version
 
-def update_curse(game_version: str, entry: dict):
-    game_version = get_version_id(game_version)
-    params = {
-        "gameVersionTypeId": game_version,
-        "pageSize": 50
+    
+    def entry_fill(self, entry:dict, data_item:dict):
+        entry['file_name'] = self.to_filename(data_item)
+        entry['download_url'] =  self.to_download_url(data_item)
+        return entry
+
+    def update_entry(self, entry:dict, version:str, verbose=False, mods_dir=None, max_entries=8):
+        entry = copy.deepcopy(entry) # guarantees we don't modify the original
+
+        # fetch api data
+        url = self.api_fmt_str.format_map(entry)
+        r = requests.get(url, headers=self.headers, params=self.params)
+
+        if r.status_code != 200:
+            raise TypeError(f"got {r.status_code=} for {url=}")
+
+        data = self.to_data(r.json())
+
+        # sort if enabled
+        if self.sort_kwargs:
+            data.sort(**self.sort_kwargs)
+
+        # TODO remove the below, this is tmp
+
+        # filter if enabled
+        if self.filter:
+            def filter_helper(iterable):
+                return self.filter(iterable, version)
+            data = list(filter(filter_helper, data))
+        if len(data) <= 0:
+            raise(ValueError("No entries in data"))
+
+        # get current filename
+        print(f"looking for {entry['name']=}")
+        current_version = self.get_current_version(mods_dir, entry['name'], verbose=verbose)
+
+        # if we already have the top item in the list, we can quick return without prompting the user
+        if current_version == self.to_filename(data[0]):
+            return self.entry_fill(entry, data[0])
+
+        # loop through each item, and prompt the user
+        print("\nChoose an option for {name} ({source}):".format_map(entry))
+        selection = None
+        for i, item in enumerate(data[0:min(max_entries, len(data))]): # for each item in data (up to max_entries)
+            # if no filename, skip
+            try:
+                if len(self.to_filename(item)) <= 0:
+                    continue
+            except (IndexError):
+                # skip the entry, modrinth causes this issue sometimes, I dont know why
+                continue
+            
+            # build prompt string for the current item in the list
+            prompt_str = [f"\t{i}: {self.to_filename(item)}"]
+
+            if self.to_downloads: # optional
+                downloads = self.to_downloads(item)
+                prompt_str.append(f"({downloads} downloads)")
+
+            if self.to_filename(item) == current_version:
+                prompt_str.append(" CURRENT")
+            
+            # print user prompt
+            print(' '.join(prompt_str))
+
+        # get the user's response
+        choice = get_input_num()
+        if choice >= len(data):
+            raise ValueError(f"Your selection of {choice} is out of range")
+
+        # apply the user's choice, and return the resultant entry
+        return self.entry_fill(entry, data[choice])
+
+def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curseforge_api_key.txt"):
+    """Processes each entry in mod_templates.json and outputs to modlist_file."""
+
+    infile = pathlib.Path(f"versions\\{args.version}\source_template.json")
+    outfile = pathlib.Path(f"versions\\{args.version}\modlist.json")
+
+    # read in curseforge api key
+    with open(curseforge_api_key_file, "r") as f:
+        CURSE_API_KEY = f.read().strip()
+    
+    def get_version_id(version: str): # TODO rewrite this completly
+        version = f"Minecraft {version}"
+        minecraft_game_id = 432
+
+        headers = {
+                    'Accept': 'application/json',
+                    'x-api-key': CURSE_API_KEY
+        }
+
+        r = requests.get(f'https://api.curseforge.com/v1/games/{minecraft_game_id}/version-types', headers=headers)
+        for item in r.json()["data"]:
+            if item["name"] == version:
+                return item["id"]
+        return None
+    
+    def major_version_match(item, game_version):
+        for curr_ver in item["game_versions"]:
+            if game_version in curr_ver:
+                return True
+        return False
+
+    def anti_forge(item, game_version):
+        if "forge" in item["fileName"]:
+                return False
+        return True
+    
+    # define sources
+    sources = {
+        "curseforge": mod_source(r"https://api.curseforge.com", "v1/mods/{mod_id}/files",
+            lambda x:x['fileName'],
+            lambda x:x['downloadUrl'],
+            to_data = lambda x:x["data"],
+            to_downloads=lambda x:x['downloadCount'],
+            headers = {
+                'Accept': 'application/json',
+                'x-api-key': CURSE_API_KEY
+            },
+            params = {
+                "gameVersionTypeId": get_version_id(args.version),
+                "pageSize": 50
+            },
+            sort_kwargs = {
+                "reverse":True,
+                "key":lambda x:x["fileDate"]
+            },
+            filter=anti_forge,
+        ),
+
+        "modrinth": mod_source(r"https://api.modrinth.com", "api/v1/mod/{mod_id}/version",
+            lambda x:x['files'][0]["filename"],
+            lambda x:x['files'][0]["url"],
+            sort_kwargs= {
+                "reverse":True,
+                "key":lambda item:item["date_published"],
+            },
+            filter = major_version_match,
+        )
     }
 
-    r = requests.get(f"{CURSE_BASE_URL}/v1/mods/{entry['mod_id']}/files", headers=curse_headers, params=params)
-
-    default_curse_file = None
-
-    data = r.json()["data"]
-    data.sort(reverse=True, key=lambda item : item["fileDate"])
-    print(f"\nChoose an option for {entry['name']} (CURSEFORGE):")
-    for i, curse_file in enumerate(data[0:min(MAX_ENTRIES, len(data))]):
-        is_curr_string = ""
-        curr_file = pathlib.Path(entry["output_dir"], f"[{entry['name']}]{curse_file['fileName']}")
-        if curr_file.exists():
-            is_curr_string = "  CURRENT"
-            # save a ref so can be used as defualt if needed
-            default_curse_file = curse_file
-        print(f"\t{i}: {curse_file['displayName']}  ({curse_file['downloadCount']} downloads){is_curr_string}")
-
-    if default_curse_file is data[0]:
-        curse_file = default_curse_file
-    else:
-        # get choice
-        choice = get_input_num()
-        
-        # save off needed data
-        if choice is None:
-            curse_file = default_curse_file
-        else:
-            curse_file = data[choice]
+    # load the mod template for the selected version
+    source_template = list()
+    with open(infile.resolve(), "r") as f:
+        source_template = json.load(f)
+        source_template.sort(key=lambda x:x['name'].lower())
     
-    #pprint(curse_file)
-    entry['file_name'] = curse_file['fileName']
-    entry['download_url'] = curse_file['downloadUrl']
-
-    return entry
-
-def update_modrinth(game_version: str, entry: dict):
-    r = requests.get(f"{MODRINTH_BASE_URL}api/v1/mod/{entry['mod_id']}/version")
-    #pprint(r.json())
-
-    def get_filename(modrinth_file):
-        return modrinth_file['files'][0]["filename"]
-
-    data = r.json()
-    data.sort(reverse=True, key=lambda item : item["date_published"])
-
-    default_modrinth_file = None
-
-    print(f"\nChoose an option for {entry['name']} (MODRINTH):")
-    for i, modrinth_file in enumerate(data[0:min(MAX_ENTRIES, len(data))]):
-        is_curr_string = ""
-
-        # hotifx
-        if len(modrinth_file['files']) <= 0:
-            continue
-
-        curr_file = pathlib.Path(entry["output_dir"], f"[{entry['name']}]{get_filename(modrinth_file)}")
-        if curr_file.exists():
-            is_curr_string = "  CURRENT"
-            # save a ref so can be used as defualt if needed
-            default_modrinth_file = modrinth_file
-        print(f"\t{i}: {modrinth_file['name']}  ({modrinth_file['downloads']} downloads){is_curr_string}")
-
-    if default_modrinth_file is data[0]:
-        modrinth_file = default_modrinth_file
-    else:
-        # get choice
-        choice = get_input_num()
-        
-        # save off needed data
-        if choice is None:
-            modrinth_file = default_modrinth_file
-        else:
-            modrinth_file = data[choice]
-    
-    #pprint(curse_file)
-    entry['file_name'] = get_filename(modrinth_file)
-    entry['download_url'] =  modrinth_file['files'][0]["url"]
-
-    return entry
-
-def generate_modlist(modlist_file: str):
-    game_version = "1.18"
-    # name is just for ease of reading 
-
-    output = list()
-
-    for entry in SOURCE_TEMPLATE:
-        result = None
-        if entry["source"] == Source.CURSEFORGE:
-            result = update_curse(game_version, entry)
-        elif entry["source"] == Source.MODRINTH:
-            result = update_modrinth(game_version, entry)
+    # process each entry, append each result to results
+    results = list()
+    for entry in source_template:
+        result = sources[entry["source"]].update_entry(entry, args.version, verbose=args.verbose, mods_dir=args.mods_dir)
 
         # save result
-        if entry is None:
-            raise Exception(f"No result for {entry['name']}")
+        if result is None:
+            raise Exception("No result for {name}, mod_id={mod_id}".format_map(entry))
         else:
-            entry.pop("source", None) # remove uneeded items
-            output.append(result)
+            results.append(result)
     
-    with open(pathlib.Path(modlist_file).resolve(), "w") as f:
+    # write results to outfile
+    with open(outfile.resolve(), "w") as f:
         opts = jsbeautifier.default_options()
         opts.indent_size = 4
-        f.write(jsbeautifier.beautify(json.dumps(output), opts))
-    
-    return output
+        
+        f.write(jsbeautifier.beautify(json.dumps(results), opts))
 
 def main():
+    # argparse helper functions
+    def dir_path(string):
+        path = pathlib.Path(string)
+        if path.is_dir():
+            return path
+        else:
+            raise NotADirectoryError(f"\"{string}\" does not exist, or is not a directory")
+
+    def minecraft_version(string):
+        # TODO make this ignore minecraft sub-versions
+        path = pathlib.Path("./versions/", string)
+        if path.is_dir():
+            return string
+        else:
+            raise TypeError(f"version \"{string}\", is not a supported minecraft version")
+
     # parse args
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--update-list', default=False, action='store_true', help='Menu driven list updater. Must have a curseforge api key.')
-    args = parser.parse_args()
+    parser.add_argument('--verbose', default=False, action='store_true', help="Enable verbose output.")
+    #parser.add_argument('--update-list', default=False, action='store_true', help='Menu driven list updater. Must have a curseforge api key.')
+    parser.add_argument('-v', '--version', type=minecraft_version, required=True, help="the minecraft version")
+    parser.add_argument('--mods-dir', type=dir_path, required=False, help="mod output directory (where all the mod jars end up). If provided, this will allow this script to automatically skip over mods that are already current.")
+    try:
+        args = parser.parse_args()
+    except Exception as e:
+        print(e)
+        sys.exit(1)
 
-    if args.update_list:
-        generate_modlist(r"woctors-mod-manager\versions\1.18\modlist.json")
+    #if args.update_list:
+    generate_modlist(args)
+    #try:
+    #except Exception as e:
+    #    print(f"Error: {e}")
+    #    if args.verbose:
+    #        raise e
 
 if __name__ == "__main__":
     main()
