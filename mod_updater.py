@@ -5,6 +5,7 @@ import pathlib
 import requests
 import dataclasses
 import argparse
+import shutil
 from pprint import pprint
 
 # global config
@@ -66,7 +67,13 @@ def update_mod(mod:dict, install_dir:str):
     
     return output_file
 
-def update_config(config:dict, install_dir:str, branch:str, version:str):
+def fetch_config_resoure(config:dict, install_dir:pathlib.Path, branch:str, version:str, local:bool):
+    if local:
+        return copy_config(config, install_dir, version)
+    else:
+        return download_config(config, install_dir, branch, version)
+
+def download_config(config:dict, install_dir:str, branch:str, version:str):
     """Updates non-mod files."""
     base=f"{REPO_URL}/{branch}/versions/{version}/resources/"
     resource = requests.get(base + config["name"])
@@ -79,6 +86,18 @@ def update_config(config:dict, install_dir:str, branch:str, version:str):
     else:
         print(f"could not download resouce {config['name']}!")
         sys.exit(1)
+
+def copy_config(config:dict, install_dir:str, version:str):
+    # if local, assume local directory
+
+    # make directory if doesn't exist
+    output_dir = pathlib.Path(install_dir, config["output_dir"])
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # do local file copy
+    src = pathlib.Path(f"./versions/{version}/resources/{config['name']}")
+    dst = pathlib.Path(output_dir, config['name'])
+    shutil.copyfile(str(src), str(dst))
 
 def remove_unused_mods(minecraft_dir:pathlib.Path, created_files:pathlib.Path):
    # remove extra files in mod dir
@@ -104,8 +123,8 @@ def do_mod_updates(args):
     remove_unused_mods(args.minecraft_dir, created_files) # remove old mods
 
     # update config files
-    #config = JsonSource(f"versions/{args.version}/configlist.json", f"{REPO_URL}/{args.branch}/versions/{args.version}/configlist.json")
-    #config.do_for_each(update_config, args.local, args.minecraft_dir, args.branch, args.version)
+    config = JsonSource(f"versions/{args.version}/configlist.json", f"{REPO_URL}/{args.branch}/versions/{args.version}/configlist.json")
+    config.do_for_each(fetch_config_resoure, args.local, args.minecraft_dir, args.branch, args.version, args.local)
 
 def main():
     # argparse helper functions
@@ -121,7 +140,7 @@ def main():
     parser.add_argument('--local', default=False, action='store_true', help="Dont reach out to github, just look locally for json files. (FOR DEVELOPMENT ONLY)")
     parser.add_argument('--branch', type=str, default="master", help="which branch in the repo to pull the config from. default is master. (FOR DEVELOPMENT ONLY)")
     parser.add_argument('-v', '--version', type=str, required=True, help="the minecraft version")
-    parser.add_argument('--minecraft-dir', type=dir_path, required=True, help="the minecraft output directory (where all the mod jars, config, etc end up).")
+    parser.add_argument('--minecraft-dir', type=dir_path, default='.', help="the minecraft output directory (where all the mod jars, config, etc end up). Defaults to current directory")
 
     try:
         args = parser.parse_args()
