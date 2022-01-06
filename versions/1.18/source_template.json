@@ -61,8 +61,8 @@
     },
     {
         "name": "krypton",
-        "source": "modrinth",
-        "mod_id": "fQEb0iXm",
+        "source": "curseforge",
+        "mod_id": 428912,
         "output_dir": "mods"
     },
     {
@@ -184,6 +184,59 @@
         "source": "curseforge",
         "mod_id": 473125,
         "output_dir": "mods"
+    },
+    {
+        "name": "better_mount_hud",
+        "source": "curseforge",
+        "mod_id": 475358,
+        "output_dir": "mods"
+    },
+    {
+        "name": "dynamic_fps",
+        "source": "curseforge",
+        "mod_id": 335493,
+        "output_dir": "mods"
+    },
+    {
+        "name": "fabrishot",
+        "source": "curseforge",
+        "mod_id": 404870,
+        "output_dir": "mods"
+    },
+    {
+        "name": "recipe_cache",
+        "source": "curseforge",
+        "mod_id": 473492,
+        "output_dir": "mods"
+    },
+    {
+        "name": "simple_voice_chat",
+        "source": "curseforge",
+        "mod_id": 416089,
+        "output_dir": "mods"
+    },
+    {
+        "name": "world_edit",
+        "source": "curseforge",
+        "mod_id": 225608,
+        "output_dir": "mods"
+    },
+    {
+        "name": "carpet_mod",
+        "source": "curseforge",
+        "mod_id": 349239,
+        "output_dir": "mods"
+    },
+    {
+        "name": "illuminations ",
+        "source": "curseforge",
+        "mod_id": 292908,
+        "output_dir": "mods"
+    },
+    {
+        "name": "item_model_fix",
+        "source": "curseforge",
+        "mod_id": 399798,
+        "output_dir": "mods"
     }
-    
 ]
