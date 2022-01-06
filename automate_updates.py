@@ -48,7 +48,7 @@ class mod_source():
     def get_current_version(mods_dir:pathlib.Path, mod_name:str, verbose=False):
         current_version = None
         if mods_dir:
-            for file in mods_dir.glob("*.jar"):
+            for file in mods_dir.glob("**/*.jar"):
                 file = str(file)
                 if f"[{mod_name}]" in file:
                     current_version = file.rsplit(']', 1)[1]
