@@ -1,11 +1,4 @@
 [{
-    "name": "alternate_current",
-    "source": "modrinth",
-    "mod_id": "r0v8vy1s",
-    "output_dir": "mods",
-    "file_name": "alternate-current-mc1.18-1.1.0.jar",
-    "download_url": "https://cdn.modrinth.com/data/r0v8vy1s/versions/mc1.18-1.1.0/alternate-current-mc1.18-1.1.0.jar"
-}, {
     "name": "AntiGhost",
     "source": "curseforge",
     "mod_id": 273279,
