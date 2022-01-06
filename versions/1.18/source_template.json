@@ -234,6 +234,12 @@
         "output_dir": "mods"
     },
     {
+        "name": "effective ",
+        "source": "curseforge",
+        "mod_id": 556381,
+        "output_dir": "mods"
+    },
+    {
         "name": "item_model_fix",
         "source": "curseforge",
         "mod_id": 399798,
