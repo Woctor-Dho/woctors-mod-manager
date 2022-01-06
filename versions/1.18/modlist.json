@@ -13,6 +13,13 @@
     "file_name": "bears-armor-hud-0.3.5.jar",
     "download_url": "https://edge.forgecdn.net/files/3554/894/bears-armor-hud-0.3.5.jar"
 }, {
+    "name": "better_mount_hud",
+    "source": "curseforge",
+    "mod_id": 475358,
+    "output_dir": "mods",
+    "file_name": "bettermounthud-1.1.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3556/489/bettermounthud-1.1.3.jar"
+}, {
     "name": "better_taskbar",
     "source": "modrinth",
     "mod_id": "gPEcet33",
@@ -41,6 +48,13 @@
     "file_name": "Ding-1.18-1.3.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
 }, {
+    "name": "dynamic_fps",
+    "source": "curseforge",
+    "mod_id": 335493,
+    "output_dir": "mods",
+    "file_name": "dynamic-fps-2.0.6.jar",
+    "download_url": "https://edge.forgecdn.net/files/3497/287/dynamic-fps-2.0.6.jar"
+}, {
     "name": "elytra_chestplate_swapper",
     "source": "curseforge",
     "mod_id": 473125,
@@ -54,6 +68,13 @@
     "output_dir": "mods",
     "file_name": "fabric-api-0.45.1+1.18.jar",
     "download_url": "https://edge.forgecdn.net/files/3591/502/fabric-api-0.45.1+1.18.jar"
+}, {
+    "name": "fabrishot",
+    "source": "curseforge",
+    "mod_id": 404870,
+    "output_dir": "mods",
+    "file_name": "fabrishot-1.6.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/922/fabrishot-1.6.0.jar"
 }, {
     "name": "falling_leaves",
     "source": "modrinth",
@@ -98,11 +119,11 @@
     "download_url": "https://edge.forgecdn.net/files/3544/231/itemscroller-fabric-1.18.0-0.15.0.jar"
 }, {
     "name": "krypton",
-    "source": "modrinth",
-    "mod_id": "fQEb0iXm",
+    "source": "curseforge",
+    "mod_id": 428912,
     "output_dir": "mods",
     "file_name": "krypton-0.1.6.jar",
-    "download_url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.1.6/krypton-0.1.6.jar"
+    "download_url": "https://edge.forgecdn.net/files/3559/150/krypton-0.1.6.jar"
 }, {
     "name": "lambda_better_grass",
     "source": "modrinth",
@@ -180,6 +201,20 @@
     "output_dir": "mods",
     "file_name": "rebind-narrator-1.18-1.0.0.jar",
     "download_url": "https://cdn.modrinth.com/data/qw2Ls89j/versions/1.0.0.18/rebind-narrator-1.18-1.0.0.jar"
+}, {
+    "name": "recipe_cache",
+    "source": "curseforge",
+    "mod_id": 473492,
+    "output_dir": "mods",
+    "file_name": "recipecache-0.2.1-1.17.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3487/949/recipecache-0.2.1-1.17.1.jar"
+}, {
+    "name": "simple_voice_chat",
+    "source": "curseforge",
+    "mod_id": 416089,
+    "output_dir": "mods",
+    "file_name": "voicechat-fabric-1.18.1-2.2.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3594/988/voicechat-fabric-1.18.1-2.2.2.jar"
 }, {
     "name": "smooth_boot",
     "source": "curseforge",
