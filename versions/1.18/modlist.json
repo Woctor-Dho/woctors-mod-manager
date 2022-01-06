@@ -1,4 +1,11 @@
 [{
+    "name": "alternate_current",
+    "source": "modrinth",
+    "mod_id": "r0v8vy1s",
+    "output_dir": "mods",
+    "file_name": "alternate-current-mc1.18-1.1.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/r0v8vy1s/versions/mc1.18-1.1.0/alternate-current-mc1.18-1.1.0.jar"
+}, {
     "name": "AntiGhost",
     "source": "curseforge",
     "mod_id": 273279,
@@ -13,12 +20,26 @@
     "file_name": "bears-armor-hud-0.3.5.jar",
     "download_url": "https://edge.forgecdn.net/files/3554/894/bears-armor-hud-0.3.5.jar"
 }, {
+    "name": "better_mount_hud",
+    "source": "curseforge",
+    "mod_id": 475358,
+    "output_dir": "mods",
+    "file_name": "bettermounthud-1.1.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3556/489/bettermounthud-1.1.3.jar"
+}, {
     "name": "better_taskbar",
     "source": "modrinth",
     "mod_id": "gPEcet33",
     "output_dir": "mods",
     "file_name": "BetterTaskbar-1.18-Fabric-1.1.jar",
     "download_url": "https://cdn.modrinth.com/data/gPEcet33/versions/1.18-1.1-Fabric/BetterTaskbar-1.18-Fabric-1.1.jar"
+}, {
+    "name": "carpet_mod",
+    "source": "curseforge",
+    "mod_id": 349239,
+    "output_dir": "mods",
+    "file_name": "fabric-carpet-1.18-1.4.56+v211130.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/18/fabric-carpet-1.18-1.4.56+v211130.jar"
 }, {
     "name": "cloth_config",
     "source": "curseforge",
@@ -41,6 +62,20 @@
     "file_name": "Ding-1.18-1.3.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
 }, {
+    "name": "dynamic_fps",
+    "source": "curseforge",
+    "mod_id": 335493,
+    "output_dir": "mods",
+    "file_name": "dynamic-fps-2.0.6.jar",
+    "download_url": "https://edge.forgecdn.net/files/3497/287/dynamic-fps-2.0.6.jar"
+}, {
+    "name": "effective ",
+    "source": "curseforge",
+    "mod_id": 556381,
+    "output_dir": "mods",
+    "file_name": "effective-1.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3580/78/effective-1.1.jar"
+}, {
     "name": "elytra_chestplate_swapper",
     "source": "curseforge",
     "mod_id": 473125,
@@ -52,8 +87,15 @@
     "source": "curseforge",
     "mod_id": 306612,
     "output_dir": "mods",
-    "file_name": "fabric-api-0.45.1+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3591/502/fabric-api-0.45.1+1.18.jar"
+    "file_name": "fabric-api-0.45.2+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3595/229/fabric-api-0.45.2+1.18.jar"
+}, {
+    "name": "fabrishot",
+    "source": "curseforge",
+    "mod_id": 404870,
+    "output_dir": "mods",
+    "file_name": "fabrishot-1.6.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/922/fabrishot-1.6.0.jar"
 }, {
     "name": "falling_leaves",
     "source": "modrinth",
@@ -76,6 +118,13 @@
     "file_name": "ferritecore-4.0.0-fabric.jar",
     "download_url": "https://cdn.modrinth.com/data/uXXizFIs/versions/4.0.0/ferritecore-4.0.0-fabric.jar"
 }, {
+    "name": "illuminations ",
+    "source": "curseforge",
+    "mod_id": 292908,
+    "output_dir": "mods",
+    "file_name": "illuminations-1.10.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/673/illuminations-1.10.2.jar"
+}, {
     "name": "Indium",
     "source": "modrinth",
     "mod_id": "Orvt0mRa",
@@ -87,8 +136,15 @@
     "source": "modrinth",
     "mod_id": "YL57xq9U",
     "output_dir": "mods",
-    "file_name": "iris-mc1.18.1-1.1.3.jar",
-    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/mc1.18-1.1.3/iris-mc1.18.1-1.1.3.jar"
+    "file_name": "iris-mc1.18.1-1.1.4.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x/v1.1.4/iris-mc1.18.1-1.1.4.jar"
+}, {
+    "name": "item_model_fix",
+    "source": "curseforge",
+    "mod_id": 399798,
+    "output_dir": "mods",
+    "file_name": "item-model-fix-1.0.3+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3573/935/item-model-fix-1.0.3+1.18.jar"
 }, {
     "name": "item_scroller",
     "source": "curseforge",
@@ -98,11 +154,11 @@
     "download_url": "https://edge.forgecdn.net/files/3544/231/itemscroller-fabric-1.18.0-0.15.0.jar"
 }, {
     "name": "krypton",
-    "source": "modrinth",
-    "mod_id": "fQEb0iXm",
+    "source": "curseforge",
+    "mod_id": 428912,
     "output_dir": "mods",
     "file_name": "krypton-0.1.6.jar",
-    "download_url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/0.1.6/krypton-0.1.6.jar"
+    "download_url": "https://edge.forgecdn.net/files/3559/150/krypton-0.1.6.jar"
 }, {
     "name": "lambda_better_grass",
     "source": "modrinth",
@@ -181,6 +237,20 @@
     "file_name": "rebind-narrator-1.18-1.0.0.jar",
     "download_url": "https://cdn.modrinth.com/data/qw2Ls89j/versions/1.0.0.18/rebind-narrator-1.18-1.0.0.jar"
 }, {
+    "name": "recipe_cache",
+    "source": "curseforge",
+    "mod_id": 473492,
+    "output_dir": "mods",
+    "file_name": "recipecache-0.2.1-1.17.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3487/949/recipecache-0.2.1-1.17.1.jar"
+}, {
+    "name": "simple_voice_chat",
+    "source": "curseforge",
+    "mod_id": 416089,
+    "output_dir": "mods",
+    "file_name": "voicechat-fabric-1.18.1-2.2.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3596/236/voicechat-fabric-1.18.1-2.2.3.jar"
+}, {
     "name": "smooth_boot",
     "source": "curseforge",
     "mod_id": 415758,
@@ -215,4 +285,11 @@
     "output_dir": "mods",
     "file_name": "tweakeroo-fabric-1.18.0-0.11.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3579/871/tweakeroo-fabric-1.18.0-0.11.0.jar"
+}, {
+    "name": "world_edit",
+    "source": "curseforge",
+    "mod_id": 225608,
+    "output_dir": "mods",
+    "file_name": "worldedit-mod-7.2.8.jar",
+    "download_url": "https://edge.forgecdn.net/files/3559/499/worldedit-mod-7.2.8.jar"
 }]

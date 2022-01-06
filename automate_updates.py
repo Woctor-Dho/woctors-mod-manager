@@ -45,10 +45,10 @@ class mod_source():
         return '/'.join((self.base_url, self.api_path_fmt_str))
     
     @staticmethod
-    def get_current_version(mods_dir:pathlib.Path, mod_name:str, verbose=False):
+    def get_current_version(minecraft_dir:pathlib.Path, mod_name:str, verbose=False):
         current_version = None
-        if mods_dir:
-            for file in mods_dir.glob("*.jar"):
+        if minecraft_dir:
+            for file in minecraft_dir.glob("mods/**/*.jar"):
                 file = str(file)
                 if f"[{mod_name}]" in file:
                     current_version = file.rsplit(']', 1)[1]
@@ -63,7 +63,7 @@ class mod_source():
         entry['download_url'] =  self.to_download_url(data_item)
         return entry
 
-    def update_entry(self, entry:dict, version:str, verbose=False, mods_dir=None, max_entries=8):
+    def update_entry(self, entry:dict, version:str, verbose=False, minecraft_dir=None, max_entries=8):
         entry = copy.deepcopy(entry) # guarantees we don't modify the original
 
         # fetch api data
@@ -91,7 +91,7 @@ class mod_source():
 
         # get current filename
         print(f"looking for {entry['name']=}")
-        current_version = self.get_current_version(mods_dir, entry['name'], verbose=verbose)
+        current_version = self.get_current_version(minecraft_dir, entry['name'], verbose=verbose)
 
         # if we already have the top item in the list, we can quick return without prompting the user
         if current_version == self.to_filename(data[0]):
@@ -208,7 +208,7 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
     # process each entry, append each result to results
     results = list()
     for entry in source_template:
-        result = sources[entry["source"]].update_entry(entry, args.version, verbose=args.verbose, mods_dir=args.mods_dir)
+        result = sources[entry["source"]].update_entry(entry, args.version, verbose=args.verbose, minecraft_dir=args.minecraft_dir)
 
         # save result
         if result is None:
@@ -245,7 +245,7 @@ def main():
     parser.add_argument('--verbose', default=False, action='store_true', help="Enable verbose output.")
     #parser.add_argument('--update-list', default=False, action='store_true', help='Menu driven list updater. Must have a curseforge api key.')
     parser.add_argument('-v', '--version', type=minecraft_version, required=True, help="the minecraft version")
-    parser.add_argument('--mods-dir', type=dir_path, required=False, help="mod output directory (where all the mod jars end up). If provided, this will allow this script to automatically skip over mods that are already current.")
+    parser.add_argument('--minecraft-dir', type=dir_path, required=True, help="the minecraft output directory (where all the mod jars, config, etc end up). If provided, this will allow this script to automatically skip over mods that are already current.")
     try:
         args = parser.parse_args()
     except Exception as e:
