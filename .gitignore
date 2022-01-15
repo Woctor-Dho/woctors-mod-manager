@@ -4,3 +4,4 @@
 test*
 mods
 config
+*.code-workspace
