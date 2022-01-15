@@ -25,8 +25,8 @@
     },
     {
         "name": "better_taskbar",
-        "source": "modrinth",
-        "mod_id": "gPEcet33",
+        "source": "curseforge",
+        "mod_id": 538793,
         "output_dir": "mods"
     },
     {
@@ -168,12 +168,6 @@
         "output_dir": "mods"
     },
     {
-        "name": "Indium",
-        "source": "modrinth",
-        "mod_id": "Orvt0mRa",
-        "output_dir": "mods"
-    },
-    {
         "name": "AntiGhost",
         "source": "curseforge",
         "mod_id": 273279,
@@ -228,7 +222,7 @@
         "output_dir": "mods"
     },
     {
-        "name": "illuminations ",
+        "name": "illuminations",
         "source": "curseforge",
         "mod_id": 292908,
         "output_dir": "mods"
@@ -243,6 +237,36 @@
         "name": "item_model_fix",
         "source": "curseforge",
         "mod_id": 399798,
+        "output_dir": "mods"
+    },
+    {
+        "name": "just_enough_keys",
+        "source": "curseforge",
+        "mod_id": 495059,
+        "output_dir": "mods"
+    },
+    {
+        "name": "playtime_meter",
+        "source": "curseforge",
+        "mod_id": 547828,
+        "output_dir": "mods"
+    },
+    {
+        "name": "clear_despawn",
+        "source": "curseforge",
+        "mod_id": 308793,
+        "output_dir": "mods"
+    },
+    {
+        "name": "sound_physics",
+        "source": "curseforge",
+        "mod_id": 535489,
+        "output_dir": "mods"
+    },
+    {
+        "name": "not_enough_animations",
+        "source": "curseforge",
+        "mod_id": 433760,
         "output_dir": "mods"
     }
 ]
