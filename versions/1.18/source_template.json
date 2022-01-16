@@ -268,5 +268,11 @@
         "source": "curseforge",
         "mod_id": 433760,
         "output_dir": "mods"
+    },
+    {
+        "name": "Bobby",
+        "source": "modrinth",
+        "mod_id": "M08ruV16",
+        "output_dir": "mods"
     }
 ]
