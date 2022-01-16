@@ -27,6 +27,13 @@
     "file_name": "BetterTaskbar-1.18-Fabric-1.1.jar",
     "download_url": "https://edge.forgecdn.net/files/3549/1/BetterTaskbar-1.18-Fabric-1.1.jar"
 }, {
+    "name": "Bobby",
+    "source": "modrinth",
+    "mod_id": "M08ruV16",
+    "output_dir": "mods",
+    "file_name": "bobby-3.1.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/M08ruV16/versions/3.1.0/bobby-3.1.0.jar"
+}, {
     "name": "carpet_mod",
     "source": "curseforge",
     "mod_id": 349239,
