@@ -45,8 +45,8 @@
     "source": "curseforge",
     "mod_id": 319057,
     "output_dir": "mods",
-    "file_name": "cloth-config-6.1.48-fabric.jar",
-    "download_url": "https://edge.forgecdn.net/files/3559/638/cloth-config-6.1.48-fabric.jar"
+    "file_name": "cloth-config-6.1.50-fabric.jar",
+    "download_url": "https://edge.forgecdn.net/files/3608/25/cloth-config-6.1.50-fabric.jar"
 }, {
     "name": "dark_loading_screen",
     "source": "curseforge",
@@ -66,8 +66,8 @@
     "source": "curseforge",
     "mod_id": 335493,
     "output_dir": "mods",
-    "file_name": "dynamic-fps-2.0.6.jar",
-    "download_url": "https://edge.forgecdn.net/files/3497/287/dynamic-fps-2.0.6.jar"
+    "file_name": "dynamic-fps-2.1.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3606/973/dynamic-fps-2.1.0.jar"
 }, {
     "name": "effective ",
     "source": "curseforge",
