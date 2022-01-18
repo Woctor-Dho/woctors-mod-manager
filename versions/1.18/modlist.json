@@ -69,12 +69,12 @@
     "file_name": "Ding-1.18-1.3.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
 }, {
-    "name": "dynamic_fps",
+    "name": "EBE",
     "source": "curseforge",
-    "mod_id": 335493,
+    "mod_id": 452046,
     "output_dir": "mods",
-    "file_name": "dynamic-fps-2.1.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3606/973/dynamic-fps-2.1.0.jar"
+    "file_name": "enhancedblockentities-0.5+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3557/31/enhancedblockentities-0.5+1.18.jar"
 }, {
     "name": "effective ",
     "source": "curseforge",
@@ -94,8 +94,8 @@
     "source": "curseforge",
     "mod_id": 306612,
     "output_dir": "mods",
-    "file_name": "fabric-api-0.46.0+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3605/891/fabric-api-0.46.0+1.18.jar"
+    "file_name": "fabric-api-0.46.1+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3609/610/fabric-api-0.46.1+1.18.jar"
 }, {
     "name": "fabrishot",
     "source": "curseforge",
@@ -111,13 +111,6 @@
     "file_name": "fallingleaves-1.9.0+1.18.1.jar",
     "download_url": "https://cdn.modrinth.com/data/WhbRG4iK/versions/1.9.0/fallingleaves-1.9.0+1.18.1.jar"
 }, {
-    "name": "fast_chest",
-    "source": "curseforge",
-    "mod_id": 436038,
-    "output_dir": "mods",
-    "file_name": "fast-chest-1.2+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3544/190/fast-chest-1.2+1.18.jar"
-}, {
     "name": "ferrite_core",
     "source": "modrinth",
     "mod_id": "uXXizFIs",
@@ -125,12 +118,26 @@
     "file_name": "ferritecore-4.0.0-fabric.jar",
     "download_url": "https://cdn.modrinth.com/data/uXXizFIs/versions/4.0.0/ferritecore-4.0.0-fabric.jar"
 }, {
+    "name": "fps_reducer",
+    "source": "curseforge",
+    "mod_id": 280294,
+    "output_dir": "mods",
+    "file_name": "FpsReducer-fabric-1.25-mc1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3548/893/FpsReducer-fabric-1.25-mc1.18.jar"
+}, {
     "name": "illuminations",
     "source": "curseforge",
     "mod_id": 292908,
     "output_dir": "mods",
     "file_name": "illuminations-1.10.2.jar",
     "download_url": "https://edge.forgecdn.net/files/3542/673/illuminations-1.10.2.jar"
+}, {
+    "name": "Indium",
+    "source": "curseforge",
+    "mod_id": 459496,
+    "output_dir": "mods",
+    "file_name": "indium-1.0.2-alpha2+mc1.18.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3606/937/indium-1.0.2-alpha2+mc1.18.1.jar"
 }, {
     "name": "Iris",
     "source": "modrinth",

@@ -138,12 +138,6 @@
         "output_dir": "mods"
     },
     {
-        "name": "fast_chest",
-        "source": "curseforge",
-        "mod_id": 436038,
-        "output_dir": "mods"
-    },
-    {
         "name": "minimal_menu",
         "source": "modrinth",
         "mod_id": "BYtiUf2Z",
@@ -186,9 +180,9 @@
         "output_dir": "mods"
     },
     {
-        "name": "dynamic_fps",
+        "name": "fps_reducer",
         "source": "curseforge",
-        "mod_id": 335493,
+        "mod_id": 280294,
         "output_dir": "mods"
     },
     {
@@ -273,6 +267,18 @@
         "name": "Bobby",
         "source": "modrinth",
         "mod_id": "M08ruV16",
+        "output_dir": "mods"
+    },
+    {
+        "name": "EBE",
+        "source": "curseforge",
+        "mod_id": 452046,
+        "output_dir": "mods"
+    },
+    {
+        "name": "Indium",
+        "source": "curseforge",
+        "mod_id": 459496,
         "output_dir": "mods"
     }
 ]
