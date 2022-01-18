@@ -280,5 +280,17 @@
         "source": "curseforge",
         "mod_id": 459496,
         "output_dir": "mods"
+    },
+    {
+        "name": "status_effect_timer",
+        "source": "curseforge",
+        "mod_id": 484738,
+        "output_dir": "mods"
+    },
+    {
+        "name": "advancement_info",
+        "source": "curseforge",
+        "mod_id": 403815,
+        "output_dir": "mods"
     }
 ]
