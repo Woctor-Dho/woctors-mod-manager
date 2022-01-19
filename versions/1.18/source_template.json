@@ -222,7 +222,7 @@
         "output_dir": "mods"
     },
     {
-        "name": "effective ",
+        "name": "effective",
         "source": "curseforge",
         "mod_id": 556381,
         "output_dir": "mods"
@@ -279,6 +279,18 @@
         "name": "Indium",
         "source": "curseforge",
         "mod_id": 459496,
+        "output_dir": "mods"
+    },
+    {
+        "name": "status_effect_timer",
+        "source": "curseforge",
+        "mod_id": 484738,
+        "output_dir": "mods"
+    },
+    {
+        "name": "advancement_info",
+        "source": "curseforge",
+        "mod_id": 403815,
         "output_dir": "mods"
     }
 ]

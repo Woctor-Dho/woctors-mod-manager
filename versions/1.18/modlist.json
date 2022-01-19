@@ -1,4 +1,11 @@
 [{
+    "name": "advancement_info",
+    "source": "curseforge",
+    "mod_id": 403815,
+    "output_dir": "mods",
+    "file_name": "advancementinfo-1.18-fabric0.43.1-1.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3543/420/advancementinfo-1.18-fabric0.43.1-1.3.jar"
+}, {
     "name": "AntiGhost",
     "source": "curseforge",
     "mod_id": 273279,
@@ -76,7 +83,7 @@
     "file_name": "enhancedblockentities-0.5+1.18.jar",
     "download_url": "https://edge.forgecdn.net/files/3557/31/enhancedblockentities-0.5+1.18.jar"
 }, {
-    "name": "effective ",
+    "name": "effective",
     "source": "curseforge",
     "mod_id": 556381,
     "output_dir": "mods",
@@ -143,8 +150,8 @@
     "source": "modrinth",
     "mod_id": "YL57xq9U",
     "output_dir": "mods",
-    "file_name": "iris-mc1.18.1-1.1.5.jar",
-    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x-v1.1.5/iris-mc1.18.1-1.1.5.jar"
+    "file_name": "iris-mc1.18.1-1.2.0-pre.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x/v1.2.0/iris-mc1.18.1-1.2.0-pre.jar"
 }, {
     "name": "item_model_fix",
     "source": "curseforge",
@@ -313,6 +320,13 @@
     "output_dir": "mods",
     "file_name": "starlight-1.0.0+fabric.d0a3220.jar",
     "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.18.x/starlight-1.0.0+fabric.d0a3220.jar"
+}, {
+    "name": "status_effect_timer",
+    "source": "curseforge",
+    "mod_id": 484738,
+    "output_dir": "mods",
+    "file_name": "statuseffecttimer-1.1.0+1.18.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3585/630/statuseffecttimer-1.1.0+1.18.1.jar"
 }, {
     "name": "tweakeroo",
     "source": "curseforge",
