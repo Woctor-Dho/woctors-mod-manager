@@ -83,7 +83,7 @@
     "file_name": "enhancedblockentities-0.5+1.18.jar",
     "download_url": "https://edge.forgecdn.net/files/3557/31/enhancedblockentities-0.5+1.18.jar"
 }, {
-    "name": "effective ",
+    "name": "effective",
     "source": "curseforge",
     "mod_id": 556381,
     "output_dir": "mods",
@@ -150,8 +150,8 @@
     "source": "modrinth",
     "mod_id": "YL57xq9U",
     "output_dir": "mods",
-    "file_name": "iris-mc1.18.1-1.1.5.jar",
-    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x-v1.1.5/iris-mc1.18.1-1.1.5.jar"
+    "file_name": "iris-mc1.18.1-1.2.0-pre.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x/v1.2.0/iris-mc1.18.1-1.2.0-pre.jar"
 }, {
     "name": "item_model_fix",
     "source": "curseforge",
