@@ -280,5 +280,65 @@
         "source": "curseforge",
         "mod_id": 459496,
         "output_dir": "mods"
+    },
+    {
+        "name": "status_effect_timer",
+        "source": "curseforge",
+        "mod_id": 484738,
+        "output_dir": "mods"
+    },
+    {
+        "name": "advancement_info",
+        "source": "curseforge",
+        "mod_id": 403815,
+        "output_dir": "mods"
+    },
+    {
+        "name": "ambient_environmment",
+        "source": "curseforge",
+        "mod_id": 320163,
+        "output_dir": "mods"
+    },
+    {
+        "name": "chat_heads",
+        "source": "curseforge",
+        "mod_id": 407206,
+        "output_dir": "mods"
+    },
+    {
+        "name": "axolotl_bucket_fix",
+        "source": "curseforge",
+        "mod_id": 495453,
+        "output_dir": "mods"
+    },
+    {
+        "name": "damage_tilt",
+        "source": "curseforge",
+        "mod_id": 411705,
+        "output_dir": "mods"
+    },
+    {
+        "name": "drip_sounds",
+        "source": "curseforge",
+        "mod_id": 448311,
+        "output_dir": "mods"
+    },
+    {
+        "name": "item_model_fix",
+        "source": "curseforge",
+        "mod_id": 399798,
+        "output_dir": "mods"
+    },
+    {
+        "name": "Continuity",
+        "source": "curseforge",
+        "mod_id": 531351,
+        "output_dir": "mods"
+    },
+    {
+        "name": "mini_hud",
+        "source": "curseforge",
+        "mod_id": 531351,
+        "output_dir": "mods"
     }
 ]

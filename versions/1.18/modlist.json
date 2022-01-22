@@ -1,10 +1,31 @@
 [{
+    "name": "advancement_info",
+    "source": "curseforge",
+    "mod_id": 403815,
+    "output_dir": "mods",
+    "file_name": "advancementinfo-1.18-fabric0.43.1-1.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3543/420/advancementinfo-1.18-fabric0.43.1-1.3.jar"
+}, {
+    "name": "ambient_environmment",
+    "source": "curseforge",
+    "mod_id": 320163,
+    "output_dir": "mods",
+    "file_name": "AmbientEnvironment-fabric-1.18.1-7.0+17.jar",
+    "download_url": "https://edge.forgecdn.net/files/3616/315/AmbientEnvironment-fabric-1.18.1-7.0+17.jar"
+}, {
     "name": "AntiGhost",
     "source": "curseforge",
     "mod_id": 273279,
     "output_dir": "mods",
     "file_name": "antighost-1.18-fabric0.43.1-1.1.4.jar",
     "download_url": "https://edge.forgecdn.net/files/3543/423/antighost-1.18-fabric0.43.1-1.1.4.jar"
+}, {
+    "name": "axolotl_bucket_fix",
+    "source": "curseforge",
+    "mod_id": 495453,
+    "output_dir": "mods",
+    "file_name": "axolotl-item-fix-1.1.3.jar",
+    "download_url": "https://edge.forgecdn.net/files/3515/755/axolotl-item-fix-1.1.3.jar"
 }, {
     "name": "bears_armour_hud",
     "source": "curseforge",
@@ -38,15 +59,22 @@
     "source": "curseforge",
     "mod_id": 349239,
     "output_dir": "mods",
-    "file_name": "fabric-carpet-1.18-1.4.56+v211130.jar",
-    "download_url": "https://edge.forgecdn.net/files/3542/18/fabric-carpet-1.18-1.4.56+v211130.jar"
+    "file_name": "fabric-carpet-1.18.1-1.4.57+v220119.jar",
+    "download_url": "https://edge.forgecdn.net/files/3613/878/fabric-carpet-1.18.1-1.4.57+v220119.jar"
+}, {
+    "name": "chat_heads",
+    "source": "curseforge",
+    "mod_id": 407206,
+    "output_dir": "mods",
+    "file_name": "chat_heads-0.6.0-fabric-1.18.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3570/678/chat_heads-0.6.0-fabric-1.18.1.jar"
 }, {
     "name": "clear_despawn",
     "source": "curseforge",
     "mod_id": 308793,
     "output_dir": "mods",
-    "file_name": "ClearDespawn-1.18-rc4-1.1.5.jar",
-    "download_url": "https://edge.forgecdn.net/files/3541/409/ClearDespawn-1.18-rc4-1.1.5.jar"
+    "file_name": "ClearDespawn-fabric-1.18.1-1.1.6.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/727/ClearDespawn-fabric-1.18.1-1.1.6.jar"
 }, {
     "name": "cloth_config",
     "source": "curseforge",
@@ -54,6 +82,20 @@
     "output_dir": "mods",
     "file_name": "cloth-config-6.1.50-fabric.jar",
     "download_url": "https://edge.forgecdn.net/files/3608/25/cloth-config-6.1.50-fabric.jar"
+}, {
+    "name": "Continuity",
+    "source": "curseforge",
+    "mod_id": 531351,
+    "output_dir": "mods",
+    "file_name": "continuity-1.0.3+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3549/420/continuity-1.0.3+1.18.jar"
+}, {
+    "name": "damage_tilt",
+    "source": "curseforge",
+    "mod_id": 411705,
+    "output_dir": "mods",
+    "file_name": "DamageTilt-1.18-fabric-0.1.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3548/92/DamageTilt-1.18-fabric-0.1.2.jar"
 }, {
     "name": "dark_loading_screen",
     "source": "curseforge",
@@ -68,6 +110,13 @@
     "output_dir": "mods",
     "file_name": "Ding-1.18-1.3.0.jar",
     "download_url": "https://edge.forgecdn.net/files/3548/400/Ding-1.18-1.3.0.jar"
+}, {
+    "name": "drip_sounds",
+    "source": "curseforge",
+    "mod_id": 448311,
+    "output_dir": "mods",
+    "file_name": "DripSounds-1.18-0.3.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3543/360/DripSounds-1.18-0.3.0.jar"
 }, {
     "name": "EBE",
     "source": "curseforge",
@@ -94,8 +143,8 @@
     "source": "curseforge",
     "mod_id": 306612,
     "output_dir": "mods",
-    "file_name": "fabric-api-0.46.1+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3609/610/fabric-api-0.46.1+1.18.jar"
+    "file_name": "fabric-api-0.46.2+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3613/749/fabric-api-0.46.2+1.18.jar"
 }, {
     "name": "fabrishot",
     "source": "curseforge",
@@ -143,8 +192,15 @@
     "source": "modrinth",
     "mod_id": "YL57xq9U",
     "output_dir": "mods",
-    "file_name": "iris-mc1.18.1-1.1.5.jar",
-    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x-v1.1.5/iris-mc1.18.1-1.1.5.jar"
+    "file_name": "iris-mc1.18.1-1.2.0-pre.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.18.x/v1.2.0/iris-mc1.18.1-1.2.0-pre.jar"
+}, {
+    "name": "item_model_fix",
+    "source": "curseforge",
+    "mod_id": 399798,
+    "output_dir": "mods",
+    "file_name": "item-model-fix-1.0.3+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3573/935/item-model-fix-1.0.3+1.18.jar"
 }, {
     "name": "item_model_fix",
     "source": "curseforge",
@@ -157,8 +213,8 @@
     "source": "curseforge",
     "mod_id": 242064,
     "output_dir": "mods",
-    "file_name": "itemscroller-fabric-1.18.0-0.15.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3544/231/itemscroller-fabric-1.18.0-0.15.0.jar"
+    "file_name": "itemscroller-fabric-1.18.1-0.15.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/858/itemscroller-fabric-1.18.1-0.15.0.jar"
 }, {
     "name": "just_enough_keys",
     "source": "curseforge",
@@ -199,8 +255,8 @@
     "source": "curseforge",
     "mod_id": 308892,
     "output_dir": "mods",
-    "file_name": "litematica-fabric-1.18.0-0.9.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3580/242/litematica-fabric-1.18.0-0.9.0.jar"
+    "file_name": "litematica-fabric-1.18.1-0.10.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/865/litematica-fabric-1.18.1-0.10.0.jar"
 }, {
     "name": "lithium",
     "source": "modrinth",
@@ -213,8 +269,15 @@
     "source": "curseforge",
     "mod_id": 303119,
     "output_dir": "mods",
-    "file_name": "malilib-fabric-1.18.0-0.10.0-dev.26.jar",
-    "download_url": "https://edge.forgecdn.net/files/3544/210/malilib-fabric-1.18.0-0.10.0-dev.26.jar"
+    "file_name": "malilib-fabric-1.18.1-0.11.4.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/856/malilib-fabric-1.18.1-0.11.4.jar"
+}, {
+    "name": "mini_hud",
+    "source": "curseforge",
+    "mod_id": 531351,
+    "output_dir": "mods",
+    "file_name": "continuity-1.0.3+1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3549/420/continuity-1.0.3+1.18.jar"
 }, {
     "name": "minimal_menu",
     "source": "modrinth",
@@ -276,8 +339,8 @@
     "source": "curseforge",
     "mod_id": 416089,
     "output_dir": "mods",
-    "file_name": "voicechat-fabric-1.18.1-2.2.8.jar",
-    "download_url": "https://edge.forgecdn.net/files/3604/376/voicechat-fabric-1.18.1-2.2.8.jar"
+    "file_name": "voicechat-fabric-1.18.1-2.2.10.jar",
+    "download_url": "https://edge.forgecdn.net/files/3613/542/voicechat-fabric-1.18.1-2.2.10.jar"
 }, {
     "name": "smooth_boot",
     "source": "curseforge",
@@ -314,12 +377,19 @@
     "file_name": "starlight-1.0.0+fabric.d0a3220.jar",
     "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.18.x/starlight-1.0.0+fabric.d0a3220.jar"
 }, {
+    "name": "status_effect_timer",
+    "source": "curseforge",
+    "mod_id": 484738,
+    "output_dir": "mods",
+    "file_name": "statuseffecttimer-1.1.0+1.18.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3585/630/statuseffecttimer-1.1.0+1.18.1.jar"
+}, {
     "name": "tweakeroo",
     "source": "curseforge",
     "mod_id": 297344,
     "output_dir": "mods",
-    "file_name": "tweakeroo-fabric-1.18.0-0.11.0.jar",
-    "download_url": "https://edge.forgecdn.net/files/3579/871/tweakeroo-fabric-1.18.0-0.11.0.jar"
+    "file_name": "tweakeroo-fabric-1.18.1-0.12.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/870/tweakeroo-fabric-1.18.1-0.12.0.jar"
 }, {
     "name": "world_edit",
     "source": "curseforge",
