@@ -228,12 +228,6 @@
         "output_dir": "mods"
     },
     {
-        "name": "item_model_fix",
-        "source": "curseforge",
-        "mod_id": 399798,
-        "output_dir": "mods"
-    },
-    {
         "name": "just_enough_keys",
         "source": "curseforge",
         "mod_id": 495059,
@@ -338,7 +332,7 @@
     {
         "name": "mini_hud",
         "source": "curseforge",
-        "mod_id": 531351,
+        "mod_id": 244260,
         "output_dir": "mods"
     }
 ]

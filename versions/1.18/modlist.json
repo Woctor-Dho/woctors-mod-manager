@@ -202,13 +202,6 @@
     "file_name": "item-model-fix-1.0.3+1.18.jar",
     "download_url": "https://edge.forgecdn.net/files/3573/935/item-model-fix-1.0.3+1.18.jar"
 }, {
-    "name": "item_model_fix",
-    "source": "curseforge",
-    "mod_id": 399798,
-    "output_dir": "mods",
-    "file_name": "item-model-fix-1.0.3+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3573/935/item-model-fix-1.0.3+1.18.jar"
-}, {
     "name": "item_scroller",
     "source": "curseforge",
     "mod_id": 242064,
@@ -274,10 +267,10 @@
 }, {
     "name": "mini_hud",
     "source": "curseforge",
-    "mod_id": 531351,
+    "mod_id": 244260,
     "output_dir": "mods",
-    "file_name": "continuity-1.0.3+1.18.jar",
-    "download_url": "https://edge.forgecdn.net/files/3549/420/continuity-1.0.3+1.18.jar"
+    "file_name": "minihud-fabric-1.18.1-0.21.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3615/867/minihud-fabric-1.18.1-0.21.2.jar"
 }, {
     "name": "minimal_menu",
     "source": "modrinth",
