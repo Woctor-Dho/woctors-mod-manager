@@ -1,0 +1,14 @@
+[
+    {
+        "name": "modmenu.json",
+        "output_dir": "config"
+    },
+    {
+        "name": "rules.json",
+        "output_dir": "config/thatorthis"
+    },
+    {
+        "name": "minimalmenu.json",
+        "output_dir": "config"
+    }
+]

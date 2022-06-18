@@ -6,6 +6,7 @@ import requests
 import dataclasses
 import argparse
 import shutil
+import re
 from pprint import pprint
 
 # global config
@@ -99,15 +100,19 @@ def copy_config(config:dict, install_dir:str, version:str):
     dst = pathlib.Path(output_dir, config['name'])
     shutil.copyfile(str(src), str(dst))
 
-def remove_unused_mods(minecraft_dir:pathlib.Path, created_files:pathlib.Path):
+def remove_unused_mods(minecraft_dir:pathlib.Path, created_files:pathlib.Path, igorore_patterns=("^no_delete*",)):
    # remove extra files in mod dir
     mods_dir = pathlib.Path(minecraft_dir, "./mods/")
     all = list(mods_dir.glob('**/*'))
     diff = list(set(all) - set(created_files))
     diff = sorted(diff, reverse=True)
 
+    for pattern in igorore_patterns:
+        diff = filter(lambda x:not re.search(pattern, x.name), diff)
+
     # if files to remove
     for file in diff:
+        print(type(file))
         if file.is_dir():
             if not any(file.iterdir()):
                 print(f"removing empty directory {file}")

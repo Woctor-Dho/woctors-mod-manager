@@ -1,0 +1,239 @@
+[{
+    "name": "better_beds",
+    "source": "curseforge",
+    "mod_id": 443782,
+    "output_dir": "mods",
+    "file_name": "betterbeds-1.2.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3342/338/betterbeds-1.2.0.jar"
+}, {
+    "name": "better_mount_hud",
+    "source": "curseforge",
+    "mod_id": 475358,
+    "output_dir": "mods",
+    "file_name": "bettermounthud-1.1.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3380/384/bettermounthud-1.1.2.jar"
+}, {
+    "name": "carpet_mod",
+    "source": "curseforge",
+    "mod_id": 349239,
+    "output_dir": "mods/.tech",
+    "file_name": "fabric-carpet-1.17.1-1.4.56+v211130.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/17/fabric-carpet-1.17.1-1.4.56+v211130.jar"
+}, {
+    "name": "cloth_config",
+    "source": "curseforge",
+    "mod_id": 319057,
+    "output_dir": "mods",
+    "file_name": "cloth-config-5.2.47-fabric.jar",
+    "download_url": "https://edge.forgecdn.net/files/3559/636/cloth-config-5.2.47-fabric.jar"
+}, {
+    "name": "dark_loading_screen",
+    "source": "curseforge",
+    "mod_id": 365727,
+    "output_dir": "mods",
+    "file_name": "dark-loading-screen-1.6.11.jar",
+    "download_url": "https://edge.forgecdn.net/files/3470/993/dark-loading-screen-1.6.11.jar"
+}, {
+    "name": "dynamic_fps",
+    "source": "curseforge",
+    "mod_id": 335493,
+    "output_dir": "mods",
+    "file_name": "dynamic-fps-2.0.6.jar",
+    "download_url": "https://edge.forgecdn.net/files/3497/287/dynamic-fps-2.0.6.jar"
+}, {
+    "name": "elytra_chestplate_swapper",
+    "source": "curseforge",
+    "mod_id": 473125,
+    "output_dir": "mods",
+    "file_name": "elytra-chestplate-swapper-1.2.0-MC1.17.jar",
+    "download_url": "https://edge.forgecdn.net/files/3355/281/elytra-chestplate-swapper-1.2.0-MC1.17.jar"
+}, {
+    "name": "fabric_api",
+    "source": "curseforge",
+    "mod_id": 306612,
+    "output_dir": "mods",
+    "file_name": "fabric-api-0.44.0+1.17.jar",
+    "download_url": "https://edge.forgecdn.net/files/3546/670/fabric-api-0.44.0+1.17.jar"
+}, {
+    "name": "fabric_skyboxes",
+    "source": "modrinth",
+    "mod_id": "YBz7DOs8",
+    "output_dir": "mods/.sodium_family",
+    "file_name": "fabricskyboxes-1.17.1-0.5.3.jar",
+    "download_url": "https://cdn.modrinth.com/data/YBz7DOs8/versions/0.5.3/fabricskyboxes-1.17.1-0.5.3.jar"
+}, {
+    "name": "fabrishot",
+    "source": "curseforge",
+    "mod_id": 404870,
+    "output_dir": "mods",
+    "file_name": "fabrishot-1.5.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3381/995/fabrishot-1.5.1.jar"
+}, {
+    "name": "fast_chest",
+    "source": "curseforge",
+    "mod_id": 436038,
+    "output_dir": "mods/.sodium_family",
+    "file_name": "fast-chest-1.2+1.17.jar",
+    "download_url": "https://edge.forgecdn.net/files/3344/1/fast-chest-1.2+1.17.jar"
+}, {
+    "name": "Iris",
+    "source": "modrinth",
+    "mod_id": "YL57xq9U",
+    "output_dir": "mods/.iris",
+    "file_name": "iris-mc1.17-1.1.4.jar",
+    "download_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/1.17.x/v1.1.4/iris-mc1.17-1.1.4.jar"
+}, {
+    "name": "item_model_fix",
+    "source": "curseforge",
+    "mod_id": 399798,
+    "output_dir": "mods/.sodium_family",
+    "file_name": "item-model-fix-1.0.3+1.17.jar",
+    "download_url": "https://edge.forgecdn.net/files/3573/934/item-model-fix-1.0.3+1.17.jar"
+}, {
+    "name": "item_scroller",
+    "source": "curseforge",
+    "mod_id": 242064,
+    "output_dir": "mods/.tech",
+    "file_name": "itemscroller-fabric-1.17.1-0.15.0-dev.20211201.010054.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/814/itemscroller-fabric-1.17.1-0.15.0-dev.20211201.010054.jar"
+}, {
+    "name": "krypton",
+    "source": "curseforge",
+    "mod_id": 428912,
+    "output_dir": "mods",
+    "file_name": "krypton-0.1.4.jar",
+    "download_url": "https://edge.forgecdn.net/files/3378/767/krypton-0.1.4.jar"
+}, {
+    "name": "lazy_dfu",
+    "source": "modrinth",
+    "mod_id": "hvFnDODi",
+    "output_dir": "mods",
+    "file_name": "lazydfu-0.1.2.jar",
+    "download_url": "https://cdn.modrinth.com/data/hvFnDODi/versions/0.1.2/lazydfu-0.1.2.jar"
+}, {
+    "name": "litematica",
+    "source": "curseforge",
+    "mod_id": 308892,
+    "output_dir": "mods/.tech",
+    "file_name": "litematica-fabric-1.17.1-0.9.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3580/241/litematica-fabric-1.17.1-0.9.0.jar"
+}, {
+    "name": "lithium",
+    "source": "curseforge",
+    "mod_id": 360438,
+    "output_dir": "mods/.sodium_family",
+    "file_name": "lithium-fabric-mc1.17.1-0.7.5.jar",
+    "download_url": "https://edge.forgecdn.net/files/3516/367/lithium-fabric-mc1.17.1-0.7.5.jar"
+}, {
+    "name": "MaLiLib",
+    "source": "curseforge",
+    "mod_id": 303119,
+    "output_dir": "mods/.tech",
+    "file_name": "malilib-fabric-1.17.1-0.10.0-dev.26.jar",
+    "download_url": "https://edge.forgecdn.net/files/3498/871/malilib-fabric-1.17.1-0.10.0-dev.26.jar"
+}, {
+    "name": "mini_hud",
+    "source": "curseforge",
+    "mod_id": 244260,
+    "output_dir": "mods/.tech",
+    "file_name": "minihud-fabric-1.17.1-0.19.0-dev.20211027.183903.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/647/minihud-fabric-1.17.1-0.19.0-dev.20211027.183903.jar"
+}, {
+    "name": "mod_menu",
+    "source": "modrinth",
+    "mod_id": "mOgUt4GM",
+    "output_dir": "mods",
+    "file_name": "modmenu-2.0.14.jar",
+    "download_url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/2.0.14/modmenu-2.0.14.jar"
+}, {
+    "name": "nofade",
+    "source": "curseforge",
+    "mod_id": 452768,
+    "output_dir": "mods/.sodium_family",
+    "file_name": "nofade-1.17-2.0.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3355/800/nofade-1.17-2.0.0.jar"
+}, {
+    "name": "ok_zoomer",
+    "source": "modrinth",
+    "mod_id": "aXf2OSFU",
+    "output_dir": "mods/.sodium_family",
+    "file_name": "okzoomer-5.0.0-beta.3+1.17.1.jar",
+    "download_url": "https://cdn.modrinth.com/data/aXf2OSFU/versions/5.0.0-beta.3+1.17.1/okzoomer-5.0.0-beta.3+1.17.1.jar"
+}, {
+    "name": "optifabric",
+    "source": "curseforge",
+    "mod_id": 322385,
+    "output_dir": "mods/.optifine",
+    "file_name": "optifabric-1.12.10.jar",
+    "download_url": "https://edge.forgecdn.net/files/3568/115/optifabric-1.12.10.jar"
+}, {
+    "name": "rebind_narrator",
+    "source": "modrinth",
+    "mod_id": "qw2Ls89j",
+    "output_dir": "mods",
+    "file_name": "rebind-narrator-1.17.1-1.0.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/qw2Ls89j/versions/1.0.0.17.1/rebind-narrator-1.17.1-1.0.0.jar"
+}, {
+    "name": "recipe_cache",
+    "source": "curseforge",
+    "mod_id": 473492,
+    "output_dir": "mods",
+    "file_name": "recipecache-0.2.1-1.17.1.jar",
+    "download_url": "https://edge.forgecdn.net/files/3487/949/recipecache-0.2.1-1.17.1.jar"
+}, {
+    "name": "simple_voice_chat",
+    "source": "curseforge",
+    "mod_id": 416089,
+    "output_dir": "mods",
+    "file_name": "voicechat-fabric-1.17.1-2.1.18.jar",
+    "download_url": "https://edge.forgecdn.net/files/3548/30/voicechat-fabric-1.17.1-2.1.18.jar"
+}, {
+    "name": "smooth_boot",
+    "source": "curseforge",
+    "mod_id": 415758,
+    "output_dir": "mods",
+    "file_name": "smoothboot-fabric-1.16.5-1.6.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3248/104/smoothboot-fabric-1.16.5-1.6.0.jar"
+}, {
+    "name": "sodium",
+    "source": "modrinth",
+    "mod_id": "AANobbMI",
+    "output_dir": "mods/.sodium",
+    "file_name": "sodium-fabric-mc1.17.1-0.3.3+build.8.jar",
+    "download_url": "https://cdn.modrinth.com/data/AANobbMI/versions/mc1.17.1-0.3.3/sodium-fabric-mc1.17.1-0.3.3+build.8.jar"
+}, {
+    "name": "starlight",
+    "source": "curseforge",
+    "mod_id": 242064,
+    "output_dir": "mods/.starlight",
+    "file_name": "itemscroller-fabric-1.17.1-0.15.0-dev.20211201.010054.jar",
+    "download_url": "https://edge.forgecdn.net/files/3542/814/itemscroller-fabric-1.17.1-0.15.0-dev.20211201.010054.jar"
+}, {
+    "name": "starlight_fabric",
+    "source": "modrinth",
+    "mod_id": "H8CaAYZC",
+    "output_dir": "mods/.sodium_family",
+    "file_name": "starlight-1.0.0+fabric.73f6d37.jar",
+    "download_url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight 1.0.0 1.17.x/starlight-1.0.0+fabric.73f6d37.jar"
+}, {
+    "name": "thatorthis",
+    "source": "modrinth",
+    "mod_id": "nnL5V3uf",
+    "output_dir": "mods",
+    "file_name": "thatorthis-0.2.6+1.17.jar",
+    "download_url": "https://cdn.modrinth.com/data/nnL5V3uf/versions/0.2.6+1.17/thatorthis-0.2.6+1.17.jar"
+}, {
+    "name": "tweakeroo",
+    "source": "curseforge",
+    "mod_id": 297344,
+    "output_dir": "mods/.tech",
+    "file_name": "tweakeroo-fabric-1.17.1-0.11.0.jar",
+    "download_url": "https://edge.forgecdn.net/files/3579/869/tweakeroo-fabric-1.17.1-0.11.0.jar"
+}, {
+    "name": "world_edit",
+    "source": "curseforge",
+    "mod_id": 225608,
+    "output_dir": "mods/.tech",
+    "file_name": "worldedit-mod-7.2.7.jar",
+    "download_url": "https://edge.forgecdn.net/files/3502/100/worldedit-mod-7.2.7.jar"
+}]
