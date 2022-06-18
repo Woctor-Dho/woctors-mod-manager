@@ -1,0 +1,89 @@
+{
+	"rules": [{
+			"id": "make FPS go stonkz",
+			"type": "DEFINED",
+			"caption": "FPS stonkz: %s ",
+			"tooltip": "Choose minecraft's renderer.\n\nNote that Sodium, Iris, and Optifine are all still in their betas for 1.17, and may be buggy (expecially Iris).",
+			"options": [{
+					"id": "sodium",
+					"caption": "Sodium",
+					"directories": [".sodium", ".sodium_family"]
+				},
+				{
+					"id": "iris",
+					"caption": "Iris",
+					"directories": [".iris", ".sodium_family"]
+				},
+				{
+					"id": "optifine",
+					"caption": "Optifine",
+					"directories": [".optifine"]
+				},
+				{
+					"id": "Vanilla",
+					"caption": "Vanilla",
+					"directories": []
+				}
+			]
+		},
+		{
+			"id": "tech",
+			"type": "DEFINED",
+			"caption": "Tech Mods: %s ",
+			"tooltip": "Technical Mods:\n\nCarpet Mod\nItem Scroller\nLitematica\nMini Hud\nTweakeroo\nWorld Edit\n\nThese all still work on vanilla servers.",
+			"options": [{
+					"id": "tech_on",
+					"caption": "ON",
+					"directories": [".tech"],
+					"default": true
+				},
+				{
+					"id": "tech_off",
+					"caption": "OFF",
+					"directories": []
+				}
+			]
+		},
+		{
+			"id": "eyecandy",
+			"type": "DEFINED",
+			"caption": "Eye Candy: %s ",
+			"tooltip": "Eye Candy Mods:\n\nArmor Hud\nCapes\nCharmonium\nClear Despawn\nDamage Tilt\nFabulous Clouds\nFalling Leaves\nIlluminations\nMinimal Menu\nNot Enough Animations\nSeamless Loading Screen\nwhyamionfire\n\nThese are all subtle visual enhancements all with a vanilla feel. Should not make more than a few fps difference.",
+			"options": [{
+					"id": "eyecandy_on",
+					"caption": "ON",
+					"directories": [".eyecandy"],
+					"default": true
+				},
+				{
+					"id": "eyecandy_off",
+					"caption": "OFF",
+					"directories": []
+				}
+			]
+		},
+		{
+			"id": "Other",
+			"type": "DEFINED",
+			"caption": "Other: %s ",
+			"tooltip": "Other:\n\nThese mods are not compatable (yet), and so are their own category for now. Starlight is higly recommended.",
+			"options": [{
+					"id": "other_starlight",
+					"caption": "Starlight",
+					"directories": [".starlight"],
+					"default": true
+				},
+				{
+					"id": "other_bobby",
+					"caption": "Bobby",
+					"directories": [".bobby"]
+				},
+				{
+					"id": "other_off",
+					"caption": "OFF",
+					"directories": []
+				}
+			]
+		}
+	]
+}
