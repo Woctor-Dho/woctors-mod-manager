@@ -314,13 +314,6 @@
     "file_name": "sodium-fabric-mc1.18.2-0.4.1+build.15.jar",
     "download_url": "https://cdn.modrinth.com/data/AANobbMI/versions/mc1.18.2-0.4.1/sodium-fabric-mc1.18.2-0.4.1%2Bbuild.15.jar"
 }, {
-    "name": "sodium-extra",
-    "source": "modrinth",
-    "mod_id": "PtjYWJkn",
-    "output_dir": "mods",
-    "file_name": "sodium-extra-0.4.5+mc1.18.2-build.42-sources.jar",
-    "download_url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/mc1.18.2-0.4.5/sodium-extra-0.4.5%2Bmc1.18.2-build.42-sources.jar"
-}, {
     "name": "sound_physics",
     "source": "curseforge",
     "mod_id": 535489,
