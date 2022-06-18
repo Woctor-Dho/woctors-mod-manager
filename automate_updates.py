@@ -63,7 +63,7 @@ class mod_source():
         entry['download_url'] =  self.to_download_url(data_item)
         return entry
 
-    def update_entry(self, entry:dict, version:str, verbose=False, minecraft_dir=None, max_entries=8):
+    def update_entry(self, entry:dict, version:str, verbose=False, minecraft_dir=None, max_entries=24):
         entry = copy.deepcopy(entry) # guarantees we don't modify the original
 
         # fetch api data
@@ -87,10 +87,11 @@ class mod_source():
                 return self.filter(iterable, version)
             data = list(filter(filter_helper, data))
         if len(data) <= 0:
-            raise(ValueError("No entries in data"))
+            print(f"mod {entry['name']} unsupported for version {version}, skipping".format_map(entry))
+            return None
 
         # get current filename
-        print(f"looking for {entry['name']=}")
+        #print(f"looking for {entry['name']=}")
         current_version = self.get_current_version(minecraft_dir, entry['name'], verbose=verbose)
 
         # if we already have the top item in the list, we can quick return without prompting the user
@@ -108,7 +109,7 @@ class mod_source():
             except (IndexError):
                 # skip the entry, modrinth causes this issue sometimes, I dont know why
                 continue
-            
+
             # build prompt string for the current item in the list
             prompt_str = [f"\t{i}: {self.to_filename(item)}"]
 
@@ -122,8 +123,12 @@ class mod_source():
             # print user prompt
             print(' '.join(prompt_str))
 
-        # get the user's response
-        choice = get_input_num()
+        # get the user's response or autoselect if only one option
+        if len(data) == 1:
+            print("\t\t...auto selecting only choice.")
+            choice = 0
+        else:
+            choice = get_input_num()
         if choice >= len(data):
             raise ValueError(f"Your selection of {choice} is out of range")
 
@@ -155,15 +160,26 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
                 return item["id"]
         return None
     
-    def major_version_match(item, game_version):
+    def modrinth_filter(item, game_version):
+        # must have files
+        if not len(item['files']):
+            return False
+        # anti forge
+        pprint(item)
+        if "forge" in item['files'][0]["filename"]:
+            return False
+        # major version match
         for curr_ver in item["game_versions"]:
             if game_version in curr_ver:
                 return True
         return False
 
-    def anti_forge(item, game_version):
+    def cursefoge_filter(item, game_version):
+        # anti forge
         if "forge" in item["fileName"]:
-                return False
+            return False
+        if not args.version in item['gameVersions']:
+            return False
         return True
     
     # define sources
@@ -185,7 +201,7 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
                 "reverse":True,
                 "key":lambda x:x["fileDate"]
             },
-            filter=anti_forge,
+            filter=cursefoge_filter,
         ),
 
         "modrinth": mod_source(r"https://api.modrinth.com", "api/v1/mod/{mod_id}/version",
@@ -195,7 +211,7 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
                 "reverse":True,
                 "key":lambda item:item["date_published"],
             },
-            filter = major_version_match,
+            filter = modrinth_filter,
         )
     }
 
@@ -210,9 +226,12 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
     for entry in source_template:
         result = sources[entry["source"]].update_entry(entry, args.version, verbose=args.verbose, minecraft_dir=args.minecraft_dir)
 
-        # save result
+        # save result after error checking
         if result is None:
-            raise Exception("No result for {name}, mod_id={mod_id}".format_map(entry))
+            print("No result for {name}, mod_id={mod_id}".format_map(entry))
+        elif not result['download_url']: # and result['name'] != 'effective': # TODO need a better way to do this
+            pprint(result)
+            raise("result had no download_url, suggest switching to modrinth")
         else:
             results.append(result)
     
