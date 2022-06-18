@@ -69,6 +69,7 @@ class mod_source():
         # fetch api data
         url = self.api_fmt_str.format_map(entry)
         r = requests.get(url, headers=self.headers, params=self.params)
+        pprint(r)
 
         if r.status_code != 200:
             raise TypeError(f"got {r.status_code=} for {url=}")
@@ -99,8 +100,8 @@ class mod_source():
 
         # loop through each item, and prompt the user
         print("\nChoose an option for {name} ({source}):".format_map(entry))
-        selection = None
-        for i, item in enumerate(data[0:min(max_entries, len(data))]): # for each item in data (up to max_entries)
+        found_current = False
+        for i, item in enumerate(data): # for each item in data (up to max_entries)
             # if no filename, skip
             try:
                 if len(self.to_filename(item)) <= 0:
@@ -118,9 +119,13 @@ class mod_source():
 
             if self.to_filename(item) == current_version:
                 prompt_str.append(" CURRENT")
+                found_current = True
             
             # print user prompt
             print(' '.join(prompt_str))
+
+            if found_current and i >= max_entries:
+                break
 
         # get the user's response
         choice = get_input_num()
