@@ -104,6 +104,13 @@
     "file_name": "dark-loading-screen-1.6.11.jar",
     "download_url": "https://edge.forgecdn.net/files/3470/993/dark-loading-screen-1.6.11.jar"
 }, {
+    "name": "dashloader",
+    "source": "modrinth",
+    "mod_id": "ZfQ3kTvR",
+    "output_dir": "mods",
+    "file_name": "dashloader-4.0.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/ZfQ3kTvR/versions/4.0.0+1.18/dashloader-4.0.0.jar"
+}, {
     "name": "ding",
     "source": "curseforge",
     "mod_id": 231275,
@@ -125,13 +132,6 @@
     "file_name": "enhancedblockentities-0.7+1.18.2.jar",
     "download_url": "https://edge.forgecdn.net/files/3836/490/enhancedblockentities-0.7+1.18.2.jar"
 }, {
-    "name": "effective",
-    "source": "curseforge",
-    "mod_id": 556381,
-    "output_dir": "mods",
-    "file_name": "effective-1.2.1.jar",
-    "download_url": "https://media.forgecdn.net/files/3735/277/effective-1.2.1.jar"
-}, {
     "name": "elytra_chestplate_swapper",
     "source": "curseforge",
     "mod_id": 473125,
@@ -146,6 +146,13 @@
     "file_name": "fabric-api-0.56.0+1.18.2.jar",
     "download_url": "https://edge.forgecdn.net/files/3831/86/fabric-api-0.56.0+1.18.2.jar"
 }, {
+    "name": "fabric_language_kotlin",
+    "source": "modrinth",
+    "mod_id": "Ha28R6CL",
+    "output_dir": "mods",
+    "file_name": "fabric-language-kotlin-1.8.0+kotlin.1.7.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/1.8.0+kotlin.1.7.0/fabric-language-kotlin-1.8.0%2Bkotlin.1.7.0.jar"
+}, {
     "name": "fabrishot",
     "source": "curseforge",
     "mod_id": 404870,
@@ -159,6 +166,13 @@
     "output_dir": "mods",
     "file_name": "fallingleaves-1.11.1+1.18.2.jar",
     "download_url": "https://cdn.modrinth.com/data/WhbRG4iK/versions/1.11.1/fallingleaves-1.11.1%2B1.18.2.jar"
+}, {
+    "name": "fastload",
+    "source": "modrinth",
+    "mod_id": "kCpssoSb",
+    "output_dir": "mods",
+    "file_name": "Fastload-1.1.4+1.18.2.jar",
+    "download_url": "https://cdn.modrinth.com/data/kCpssoSb/versions/1.18.2.fabric.1.1.4/Fastload-1.1.4%2B1.18.2.jar"
 }, {
     "name": "ferrite_core",
     "source": "modrinth",
@@ -272,13 +286,6 @@
     "file_name": "modmenu-3.2.2.jar",
     "download_url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/3.2.2/modmenu-3.2.2.jar"
 }, {
-    "name": "no_fade",
-    "source": "curseforge",
-    "mod_id": 452768,
-    "output_dir": "mods",
-    "file_name": "nofade-1.18-2.0.1.jar",
-    "download_url": "https://edge.forgecdn.net/files/3550/935/nofade-1.18-2.0.1.jar"
-}, {
     "name": "not_enough_animations",
     "source": "modrinth",
     "mod_id": "MPCX6s5C",
@@ -286,19 +293,19 @@
     "file_name": "notenoughanimations-fabric-1.6.0-mc1.18.2.jar",
     "download_url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/1.6.0-fabric-1.18/notenoughanimations-fabric-1.6.0-mc1.18.2.jar"
 }, {
-    "name": "ok_zoomer",
-    "source": "modrinth",
-    "mod_id": "aXf2OSFU",
-    "output_dir": "mods",
-    "file_name": "ok_zoomer-5.0.0-beta.7+1.18.2.jar",
-    "download_url": "https://cdn.modrinth.com/data/aXf2OSFU/versions/5.0.0-beta.7+1.18.2/ok_zoomer-5.0.0-beta.7%2B1.18.2.jar"
-}, {
     "name": "simple_voice_chat",
     "source": "curseforge",
     "mod_id": 416089,
     "output_dir": "mods",
     "file_name": "voicechat-fabric-1.18.2-2.2.46.jar",
     "download_url": "https://edge.forgecdn.net/files/3834/592/voicechat-fabric-1.18.2-2.2.46.jar"
+}, {
+    "name": "skip_transitions",
+    "source": "modrinth",
+    "mod_id": "Zoz5HQjH",
+    "output_dir": "mods",
+    "file_name": "skiptransitions-1.3.2+1.18.x.jar",
+    "download_url": "https://cdn.modrinth.com/data/Zoz5HQjH/versions/v1.3.2+mc1.18.x/skiptransitions-1.3.2%2B1.18.x.jar"
 }, {
     "name": "smooth_boot",
     "source": "curseforge",
@@ -348,4 +355,11 @@
     "output_dir": "mods",
     "file_name": "worldedit-mod-7.2.10.jar",
     "download_url": "https://edge.forgecdn.net/files/3697/298/worldedit-mod-7.2.10.jar"
+}, {
+    "name": "zoomify",
+    "source": "modrinth",
+    "mod_id": "w7ThoJFB",
+    "output_dir": "mods",
+    "file_name": "Zoomify-1.6.0.jar",
+    "download_url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/1.6.0/Zoomify-1.6.0.jar"
 }]
