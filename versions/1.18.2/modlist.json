@@ -34,13 +34,6 @@
     "file_name": "bears-armor-hud-0.3.6.jar",
     "download_url": "https://edge.forgecdn.net/files/3671/102/bears-armor-hud-0.3.6.jar"
 }, {
-    "name": "better_mount_hud",
-    "source": "curseforge",
-    "mod_id": 475358,
-    "output_dir": "mods",
-    "file_name": "bettermounthud-1.1.4.jar",
-    "download_url": "https://edge.forgecdn.net/files/3637/536/bettermounthud-1.1.4.jar"
-}, {
     "name": "better_taskbar",
     "source": "curseforge",
     "mod_id": 538793,
@@ -143,8 +136,8 @@
     "source": "curseforge",
     "mod_id": 306612,
     "output_dir": "mods",
-    "file_name": "fabric-api-0.56.0+1.18.2.jar",
-    "download_url": "https://edge.forgecdn.net/files/3831/86/fabric-api-0.56.0+1.18.2.jar"
+    "file_name": "fabric-api-0.56.1+1.18.2.jar",
+    "download_url": "https://edge.forgecdn.net/files/3840/106/fabric-api-0.56.1+1.18.2.jar"
 }, {
     "name": "fabric_language_kotlin",
     "source": "modrinth",
