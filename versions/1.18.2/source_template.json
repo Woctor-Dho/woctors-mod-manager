@@ -162,12 +162,6 @@
         "output_dir": "mods"
     },
     {
-        "name": "better_mount_hud",
-        "source": "curseforge",
-        "mod_id": 475358,
-        "output_dir": "mods"
-    },
-    {
         "name": "fps_reducer",
         "source": "curseforge",
         "mod_id": 280294,
