@@ -9,6 +9,8 @@ import sys
 import dataclasses
 from pprint import pprint
 
+REPO_URL = r"https://raw.githubusercontent.com/Woctor-Dho/woctors-mod-manager"
+
 # TODO add this mod
 #    {
 #        "name": "mini_hud",
@@ -165,7 +167,6 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
         if not len(item['files']):
             return False
         # anti forge
-        pprint(item)
         if "forge" in item['files'][0]["filename"]:
             return False
         # major version match
@@ -231,7 +232,8 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
             print("No result for {name}, mod_id={mod_id}".format_map(entry))
         elif not result['download_url']: # and result['name'] != 'effective': # TODO need a better way to do this
             pprint(result)
-            raise("result had no download_url, suggest switching to modrinth")
+            print("skipping because no url ree")
+            #raise("result had no download_url, suggest switching to modrinth")
         else:
             results.append(result)
     
@@ -241,6 +243,32 @@ def generate_modlist(args:argparse.ArgumentParser, curseforge_api_key_file="curs
         opts.indent_size = 4
         
         f.write(jsbeautifier.beautify(json.dumps(results), opts))
+
+def gen_changelog(args):
+    remote_json = requests.get(f"{REPO_URL}/master/versions/{args.version}/modlist.json").json()
+    with open(pathlib.Path(f"versions\\{args.version}\modlist.json"), 'r') as fp:
+        local_json = json.load(fp)
+    
+    local_mods = {x['name'] for x in local_json}
+    remote_mods = {x['name'] for x in remote_json}
+    updates = list()
+    # below is inefficient, i dont care
+    for item in set(x['name'] for x in local_json).intersection(set(x['name'] for x in remote_json)):
+        remote_filename = list(filter(lambda x:x['name'] == item, remote_json))[0]["file_name"]
+        local_filename = list(filter(lambda x:x['name'] == item, local_json))[0]["file_name"]
+        if (local_filename != remote_filename):
+            updates.append(f'{item}: `{remote_filename}` -> `{local_filename}`')
+
+    added = local_mods - remote_mods
+    removed = remote_mods - local_mods
+
+    if (added):
+        print('\n- '.join(("Added:", *added)), end='\n\n')
+    if (removed):
+        print('\n- '.join(("Removed:", *removed)), end='\n\n')
+    if (updates):
+        print('\n- '.join(("Updated:", *updates)), end='\n\n')
+
 
 def main():
     # argparse helper functions
@@ -265,19 +293,23 @@ def main():
     #parser.add_argument('--update-list', default=False, action='store_true', help='Menu driven list updater. Must have a curseforge api key.')
     parser.add_argument('-v', '--version', type=minecraft_version, required=True, help="the minecraft version")
     parser.add_argument('--minecraft-dir', type=dir_path, required=True, help="the minecraft output directory (where all the mod jars, config, etc end up). If provided, this will allow this script to automatically skip over mods that are already current.")
+    parser.add_argument('--gen-changelog',default=False, action='store_true', help='Generate a change log using the diff between the current and master.')
     try:
         args = parser.parse_args()
     except Exception as e:
         print(e)
         sys.exit(1)
 
-    #if args.update_list:
-    generate_modlist(args)
-    #try:
-    #except Exception as e:
-    #    print(f"Error: {e}")
-    #    if args.verbose:
-    #        raise e
+    if (args.gen_changelog):
+        gen_changelog(args)
+    else:
+        #if args.update_list:
+        generate_modlist(args)
+        #try:
+        #except Exception as e:
+        #    print(f"Error: {e}")
+        #    if args.verbose:
+        #        raise e
 
 if __name__ == "__main__":
     main()

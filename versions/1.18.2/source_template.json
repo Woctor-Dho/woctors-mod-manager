@@ -90,12 +90,6 @@
         "output_dir": "mods"
     },
     {
-        "name": "ok_zoomer",
-        "source": "modrinth",
-        "mod_id": "aXf2OSFU",
-        "output_dir": "mods"
-    },
-    {
         "name": "rebind_narrator",
         "source": "modrinth",
         "mod_id": "qw2Ls89j",
@@ -105,12 +99,6 @@
         "name": "sodium",
         "source": "modrinth",
         "mod_id": "AANobbMI",
-        "output_dir": "mods"
-    },
-    {
-        "name": "sodium-extra",
-        "source": "modrinth",
-        "mod_id": "PtjYWJkn",
         "output_dir": "mods"
     },
     {
@@ -150,9 +138,9 @@
         "output_dir": "mods"
     },
     {
-        "name": "no_fade",
-        "source": "curseforge",
-        "mod_id": 452768,
+        "name": "skip_transitions",
+        "source": "modrinth",
+        "mod_id": "Zoz5HQjH",
         "output_dir": "mods"
     },
     {
@@ -333,6 +321,36 @@
         "name": "mini_hud",
         "source": "curseforge",
         "mod_id": 244260,
+        "output_dir": "mods"
+    },
+    {
+        "name": "dashloader",
+        "source": "modrinth",
+        "mod_id": "ZfQ3kTvR",
+        "output_dir": "mods"
+    },
+    {
+        "name": "fastload",
+        "source": "modrinth",
+        "mod_id": "kCpssoSb",
+        "output_dir": "mods"
+    },
+    {
+        "name": "entity_collision_FPS_fix",
+        "source": "modrinth",
+        "mod_id": "GiriLmaY",
+        "output_dir": "mods"
+    },
+    {
+        "name": "zoomify",
+        "source": "modrinth",
+        "mod_id": "w7ThoJFB",
+        "output_dir": "mods"
+    },
+    {
+        "name": "fabric_language_kotlin",
+        "source": "modrinth",
+        "mod_id": "Ha28R6CL",
         "output_dir": "mods"
     }
 ]
